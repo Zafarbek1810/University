@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: SF Pro Display, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -15,12 +15,122 @@ a {
   box-sizing: border-box;
 }
 
+.myBtn {
+  border: none;
+  border-radius: 10px;
+  background: #007aff;
+  padding: 16px 33px;
+}
+
+.ant-select-dropdown {
+  border-radius: 0 !important;
+  z-index: 9999;
+}
+
+.ant-select-item-option-selected {
+  background: none !important;
+  color: #475467 !important;
+}
+.ant-select-selector{
+  box-shadow: none !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+}
+
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SFProDisplay-LightItalic.woff2') format('woff2'),
+      url('./fonts/SFProDisplay-LightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SFProDisplay-Medium.woff2') format('woff2'),
+      url('./fonts/SFProDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SFProDisplay-Regular.woff2') format('woff2'),
+      url('./fonts/SFProDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SFProDisplay-SemiboldItalic.woff2') format('woff2'),
+      url('./fonts/SFProDisplay-SemiboldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SFProDisplay-ThinItalic.woff2') format('woff2'),
+      url('./fonts/SFProDisplay-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SFProDisplay-BlackItalic.woff2') format('woff2'),
+      url('./fonts/SFProDisplay-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SFProDisplay-UltralightItalic.woff2') format('woff2'),
+      url('./fonts/SFProDisplay-UltralightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SFProDisplay-Bold.woff2') format('woff2'),
+      url('./fonts/SFProDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SFProDisplay-HeavyItalic.woff2') format('woff2'),
+      url('./fonts/SFProDisplay-HeavyItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: #000;
+    background-color: #fff;
   }
 }

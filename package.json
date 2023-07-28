@@ -9,9 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "antd": "^5.7.2",
+    "aos": "^2.3.4",
+    "axios": "^1.4.0",
+    "i18next": "^23.2.11",
     "next": "13.4.12",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-countup": "^6.4.2",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.2",
+    "react-i18next": "^12.3.1",
+    "react-observer-api": "^1.0.14",
+    "styled-components": "^6.0.5",
+    "swiper": "^10.0.4",
+    "use-context-selector": "^1.4.1"
   },
   "devDependencies": {
     "eslint": "8.45.0",
