@@ -60,7 +60,7 @@ const Program = () => {
     <ProgramWrapper>
       <Container>
         <div className="tabs">
-          <h4 className="title">Ta'lim dasturlari</h4>
+          <h4 className="title">Ta&apos;lim dasturlari</h4>
           {tabMassiv.map((item, index) => {
             return (
               <button

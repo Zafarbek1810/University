@@ -41,7 +41,7 @@ const EducationType = () => {
   return (
     <EducationTypeWrapper>
       <Container>
-        <h3 className="title">Ta’lim turlari</h3>
+        <h3 className="title">Ta&apos;lim turlari</h3>
         <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
         <Tabs
           tabPosition="left"

@@ -16,10 +16,10 @@ const Footer = () => {
           </div>
           <div className="links">
             <MyLink to="/">Abituriyentlar</MyLink>
-            <MyLink to="/">O'quv dasturlari</MyLink>
+            <MyLink to="/">O&apos;quv dasturlari</MyLink>
             <MyLink to="/">Biz haqimizda</MyLink>
             <MyLink to="/">Talabalar</MyLink>
-            <MyLink to="/">Chet elliklar uchun ta'lim</MyLink>
+            <MyLink to="/">Chet elliklar uchun ta&apos;lim</MyLink>
             <MyLink to="/">Hamkorlar</MyLink>
           </div>
           <div className="social">

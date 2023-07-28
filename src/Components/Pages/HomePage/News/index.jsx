@@ -9,7 +9,7 @@ const News = () => {
         <h4 className="title">Yangiliklar</h4>
         <div className="cards">
           {[1, 2, 3, 4, 5, 6].map((item, index) => (
-            <div className="card">
+            <div key={index} className="card">
               <div className="card-img">
                 <img src="/images/news.png" alt="" />
               </div>
@@ -24,7 +24,7 @@ const News = () => {
         </div>
 
         <div className="btns">
-          <button>+ Ko'proq ko'rsatish</button>
+          <button>+ Ko&apos;proq ko&apos;rsatish</button>
         </div>
       </Container>
     </NewsWrapper>

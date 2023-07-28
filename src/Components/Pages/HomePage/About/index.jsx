@@ -86,7 +86,7 @@ const About = () => {
         <div className="bottom">
           <div className="cards">
             {cardData.map((item) => (
-              <div className="item">
+              <div key={item.title} className="item">
                 <div className="icon">
                   {item.icon}
                 </div>

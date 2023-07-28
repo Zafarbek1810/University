@@ -11,7 +11,7 @@ const Tab2 = () => {
               <div className="bottom">
                 <h5 className="title">Tadbirkorlik</h5>
                 <p className="descr">
-                  Ish beruvchiga qaram bo'lishni xohlamaysizmi? O'z biznesingizni
+                  Ish beruvchiga qaram bo&apos;lishni xohlamaysizmi? O&apos;z biznesingizni
                   oching!
                 </p>
               </div>
