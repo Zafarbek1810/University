@@ -1,6 +1,7 @@
 import React from "react";
 import { TabWrapper } from "../../style";
 import Card from "../Card";
+import RightSvg from "../../../../../Common/Svgs/RightSvg";
 
 const Tab1 = () => {
   return (
@@ -10,11 +11,11 @@ const Tab1 = () => {
           <div key={index} className="card">
             <img src="/images/card.png" alt="" />
             <div className="bottom">
-              <h5 className="title">Tadbirkorlik</h5>
+              <h5 className="title">ПРЕДПРИНИМАТЕЛЬСТВО</h5>
               <p className="descr">
-                Ish beruvchiga qaram bo&apos;lishni xohlamaysizmi? O&apos;z biznesingizni
-                oching!
+              Не хотите зависеть от работодателя? Откройте собственное дело!
               </p>
+              <button>Подробнее <RightSvg/> </button>
             </div>
           </div>
         ))}

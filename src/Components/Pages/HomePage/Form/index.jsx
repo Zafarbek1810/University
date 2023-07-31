@@ -10,16 +10,15 @@ const Form = () => {
     <Container>
       <FormWrapper>
         <h3 className="title">
-          Ariza qoldirish orqali qabul komissiyasidan maslahat oling
+        Получи консультацию приемной комиссии, оставив заявку
         </h3>
         <p className="descr">
-          Tugmani bosish orqali siz Maxfiylik siyosatiga va axborot
-          byulletenlarini olishga rozilik bildirasiz
+        Получи консультацию приемной комиссии, оставив заявку
         </p>
         <form>
           <div className="label">
             <FormUserSvg />
-            <input type="text" placeholder="Ism familiya" />
+            <input type="text" placeholder="Имя" />
           </div>
           <div className="label">
             <FormPhoneSvg />
@@ -28,10 +27,10 @@ const Form = () => {
           </div>
           <div className="label">
             <FormEmailSvg />
-            <input required type="email" placeholder="Email" />
+            <input required type="email" placeholder="E-mail" />
           </div>
           <button type="submit" className="myBtn">
-            Ro’yxatdan o‘tish
+          Записаться
           </button>
         </form>
       </FormWrapper>

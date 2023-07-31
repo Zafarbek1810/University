@@ -4,23 +4,28 @@ import Container from "../../../Common/Container";
 import CountUp from "react-countup";
 import { useVisibilityHook } from "react-observer-api";
 import AboutIcon1 from "../../../Common/Svgs/AboutIcon1";
+import AboutIcon2 from "../../../Common/Svgs/AboutIcon2";
+import AboutIcon3 from "../../../Common/Svgs/AboutIcon3";
+import AboutIcon4 from "../../../Common/Svgs/AboutIcon4";
+import AboutIcon5 from "../../../Common/Svgs/AboutIcon5";
+import AboutIcon6 from "../../../Common/Svgs/AboutIcon6";
 
 const countData = [
   {
     count: 2020,
-    info: "yil tashkil topgan",
+    info: "Год основания",
     duration: 3,
     initial: 0,
   },
   {
     count: 12,
-    info: "Bakalavr dasturlari",
+    info: "Программ бакалавриата",
     duration: 3,
     initial: 0,
   },
   {
     count: 100,
-    info: "Ish beruvchi hamkorlar",
+    info: "Партнеров Работодателей",
     duration: 3,
     initial: 0,
     suffix: "+",
@@ -30,39 +35,39 @@ const countData = [
 const cardData = [
   {
     icon: <AboutIcon1 />,
-    title: "Xalqaro ta'lim standartlari",
+    title: "Международные стандарты обучения",
     descr:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna",
   },
   {
-    icon: <AboutIcon1 />,
-    title: "O'qish va ishni birlashtirish ",
+    icon: <AboutIcon2 />,
+    title: "Возможность совмещать учебу и работу",
     descr:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna",
   },
   {
-    icon: <AboutIcon1 />,
-    title: "Amaliy diqqat",
+    icon: <AboutIcon3 />,
+    title: "Практическая направленность",
     descr:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna",
   },
   {
-    icon: <AboutIcon1 />,
-    title: "Moslashuvchan to'lov shakli",
+    icon: <AboutIcon4 />,
+    title: "Гибкая форма оплаты",
     descr:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna",
   },
   {
-    icon: <AboutIcon1 />,
-    title: "Davlat diplomi",
+    icon: <AboutIcon5 />,
+    title: "Государственный диплом",
     descr:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna",
   },
   {
-    icon: <AboutIcon1 />,
-    title: "O'rganishning qulay shakli",
+    icon: <AboutIcon6 />,
+    title: "Удобная форма обучения",
     descr:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna",
   },
 ];
 
@@ -71,7 +76,7 @@ const About = () => {
     <AboutWrapper>
       <Container>
         <div className="top">
-          <h4 className="title">Akademiya haqida</h4>
+          <h4 className="title">ОБ АКАДЕМИИ</h4>
           <p className="descr">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

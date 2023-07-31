@@ -6,14 +6,12 @@ const Banner = () => {
     <BannerWrapper>
       <Container>
         <h1 className="title">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit
+        НОВЫЕ ЦЕЛИ ТРЕБУЮТНОВЫХ ЗНАНИЙ
         </h1>
         <p className="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
         </p>
-        <button className="myBtn">Ro’yxatdan o‘tish</button>
+        <button className="myBtn">Записаться</button>
       </Container>
     </BannerWrapper>
   );

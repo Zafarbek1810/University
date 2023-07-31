@@ -74,7 +74,7 @@ const MainHeaderWrapper = styled.div`
     min-height: 100px !important;
     display: flex;
 
-    .logo{
+    .logo {
       display: none;
     }
 
@@ -86,11 +86,14 @@ const MainHeaderWrapper = styled.div`
         transition: 300ms;
         text-transform: capitalize;
 
-        &:hover{
-          color: #007AFF;
-        transition: 300ms;
-
+        &:hover {
+          color: #007aff;
+          transition: 300ms;
         }
+      }
+
+      .active {
+        color: #007aff;
       }
     }
 
@@ -114,15 +117,15 @@ const MainHeaderWrapper = styled.div`
     height: 100px;
     font-family: SF Pro Display;
     transform: translateY(0);
-    transition: 0.3s  ease-in !important;
+    transition: 0.3s ease-in !important;
     p {
       color: #000;
       font-family: SF Pro Display !important;
       font-weight: 500;
 
-      &:hover{
+      &:hover {
         transition: 300ms;
-        color: #007AFF;
+        color: #007aff;
       }
     }
 
@@ -143,8 +146,6 @@ const MainHeaderWrapper = styled.div`
       }
     }
   }
-
- 
 
   // --------------------------- BURGER STYLES ----------------------------------
   .getBtn {
@@ -211,7 +212,7 @@ const MainHeaderWrapper = styled.div`
       background-color: #fff !important;
       min-height: 100px !important;
 
-      .logo{
+      .logo {
         display: block;
       }
     }

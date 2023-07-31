@@ -116,6 +116,34 @@ const TabWrapper = styled.div`
       font-weight: 400;
       line-height: 30px;
     }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #fff;
+      border: none;
+      color: #475467;
+      font-family: SF Pro Display;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg{
+        width: 32px;
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .card:hover button{
+    color: #007aff;
+    cursor: pointer;
+    svg{
+      stroke: #007aff;
+    }
   }
 
   @media (max-width: 992px) {

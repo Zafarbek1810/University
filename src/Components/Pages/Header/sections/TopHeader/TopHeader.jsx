@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import TopHeaderWrapper from "./TopHeaderWrapper";
 import MyLink from "../../../../Common/MyLink";
 import ClockSvg from "../../../../Common/Svgs/ClockSvg";
 import PhoneSvg from "../../../../Common/Svgs/PhoneSvg";
 import { Select } from "antd";
 import { useTranslation } from "react-i18next";
+import { HeaderContext } from "../../../../../Context/HeaderContext";
 
 const TopHeader = () => {
   const { t, i18n } = useTranslation();
   const defaultLang = i18n.language;
+  const { setBurger } = useContext(HeaderContext);
 
   console.log({useTranslation});
 

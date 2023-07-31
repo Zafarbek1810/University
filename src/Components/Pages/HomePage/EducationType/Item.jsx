@@ -5,11 +5,9 @@ const Item1 = () => {
   return (
     <ItemWrapper>
       <div className="item">
-        <h4 className="title">Oliy ma&apos;lumot (bakalavr darajasi)1</h4>
+        <h4 className="title">Высшее образование (бакалавриат)</h4>
         <p className="descr">
-          Akademiya faoliyatiga o&apos;rta kasb-hunar ta&apos;limi dasturlari bo&apos;yicha
-          mutaxassislar tayyorlash kiradi. Trening davomida talabalar eng
-          ommabop yo&apos;nalishlar bo&apos;yicha amaliy ko&apos;nikmalarga ega bo&apos;ladilar.
+          Бакалавриат Академии предлагает большой выбор направлений и профилей для обучения на программах высшего образования. Вы также можете закончить уже начатое в другом вузе образование по любой из наших программ обучения.
         </p>
       </div>
     </ItemWrapper>
@@ -19,11 +17,9 @@ const Item2 = () => {
   return (
     <ItemWrapper>
      <div className="item">
-        <h4 className="title">Oliy ma&apos;lumot (bakalavr darajasi)1</h4>
+        <h4 className="title">Высшее образование (бакалавриат)</h4>
         <p className="descr">
-          Akademiya faoliyatiga o&apos;rta kasb-hunar ta&apos;limi dasturlari bo&apos;yicha
-          mutaxassislar tayyorlash kiradi. Trening davomida talabalar eng
-          ommabop yo&apos;nalishlar bo&apos;yicha amaliy ko&apos;nikmalarga ega bo&apos;ladilar.
+          Бакалавриат Академии предлагает большой выбор направлений и профилей для обучения на программах высшего образования. Вы также можете закончить уже начатое в другом вузе образование по любой из наших программ обучения.
         </p>
       </div>
     </ItemWrapper>
@@ -33,11 +29,9 @@ const Item3 = () => {
   return (
     <ItemWrapper>
      <div className="item">
-        <h4 className="title">Oliy ma&apos;lumot (bakalavr darajasi)1</h4>
+        <h4 className="title">Высшее образование (бакалавриат)</h4>
         <p className="descr">
-          Akademiya faoliyatiga o&apos;rta kasb-hunar ta&apos;limi dasturlari bo&apos;yicha
-          mutaxassislar tayyorlash kiradi. Trening davomida talabalar eng
-          ommabop yo&apos;nalishlar bo&apos;yicha amaliy ko&apos;nikmalarga ega bo&apos;ladilar.
+          Бакалавриат Академии предлагает большой выбор направлений и профилей для обучения на программах высшего образования. Вы также можете закончить уже начатое в другом вузе образование по любой из наших программ обучения.
         </p>
       </div>
     </ItemWrapper>
@@ -47,11 +41,9 @@ const Item4 = () => {
   return (
     <ItemWrapper>
       <div className="item">
-        <h4 className="title">Oliy ma&apos;lumot (bakalavr darajasi)1</h4>
+        <h4 className="title">Высшее образование (бакалавриат)</h4>
         <p className="descr">
-          Akademiya faoliyatiga o&apos;rta kasb-hunar ta&apos;limi dasturlari bo&apos;yicha
-          mutaxassislar tayyorlash kiradi. Trening davomida talabalar eng
-          ommabop yo&apos;nalishlar bo&apos;yicha amaliy ko&apos;nikmalarga ega bo&apos;ladilar.
+          Бакалавриат Академии предлагает большой выбор направлений и профилей для обучения на программах высшего образования. Вы также можете закончить уже начатое в другом вузе образование по любой из наших программ обучения.
         </p>
       </div>
     </ItemWrapper>
@@ -61,11 +53,9 @@ const Item5 = () => {
   return (
     <ItemWrapper>
       <div className="item">
-        <h4 className="title">Oliy ma&apos;lumot (bakalavr darajasi)1</h4>
+        <h4 className="title">Высшее образование (бакалавриат)</h4>
         <p className="descr">
-          Akademiya faoliyatiga o&apos;rta kasb-hunar ta&apos;limi dasturlari bo&apos;yicha
-          mutaxassislar tayyorlash kiradi. Trening davomida talabalar eng
-          ommabop yo&apos;nalishlar bo&apos;yicha amaliy ko&apos;nikmalarga ega bo&apos;ladilar.
+          Бакалавриат Академии предлагает большой выбор направлений и профилей для обучения на программах высшего образования. Вы также можете закончить уже начатое в другом вузе образование по любой из наших программ обучения.
         </p>
       </div>
     </ItemWrapper>
@@ -75,11 +65,9 @@ const Item6 = () => {
   return (
     <ItemWrapper>
       <div className="item">
-        <h4 className="title">Oliy ma&apos;lumot (bakalavr darajasi)1</h4>
+        <h4 className="title">Высшее образование (бакалавриат)</h4>
         <p className="descr">
-          Akademiya faoliyatiga o&apos;rta kasb-hunar ta&apos;limi dasturlari bo&apos;yicha
-          mutaxassislar tayyorlash kiradi. Trening davomida talabalar eng
-          ommabop yo&apos;nalishlar bo&apos;yicha amaliy ko&apos;nikmalarga ega bo&apos;ladilar.
+          Бакалавриат Академии предлагает большой выбор направлений и профилей для обучения на программах высшего образования. Вы также можете закончить уже начатое в другом вузе образование по любой из наших программ обучения.
         </p>
       </div>
     </ItemWrapper>

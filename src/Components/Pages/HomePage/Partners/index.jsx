@@ -29,7 +29,7 @@ const Partners = () => {
   const width = useWindowWidth();
   return (
     <PartnersWrapper animateWidth={width}>
-        <h4 className="title">Hamkorlarimiz</h4>
+        <h4 className="title">НАШИ ПАРТНЕРЫ</h4>
       <div className="wrapper">
         <div className="slider">
           <div className="slide-track">

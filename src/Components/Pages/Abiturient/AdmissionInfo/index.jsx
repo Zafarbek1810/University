@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { ProgramWrapper } from "./style";
+import { AdmissionWrapper } from "./style";
+import Container from "../../../Common/Container";
 import Tab1 from "./Items/Tab1";
 import Tab2 from "./Items/Tab2";
 import Tab3 from "./Items/Tab3";
 import Tab4 from "./Items/Tab4";
 import Tab5 from "./Items/Tab5";
-import Container from "../../../Common/Container";
 
-const Program = () => {
+const AdmissionInfo = () => {
   const [activePage, setActivePage] = useState(1);
 
   let Component = null;
@@ -56,11 +56,14 @@ const Program = () => {
       id: 5,
     },
   ];
+
   return (
-    <ProgramWrapper>
+    <AdmissionWrapper>
       <Container>
         <div className="tabs">
-          <h4 className="title">ОБРАЗОВАТЕЛЬНЫЕ ПРОГРАММЫ</h4>
+          <h4 className="title">
+            ИНФОРМАЦИЯ О ПРИЁМЕ В 2023 / 2024 УЧЕБНОМ ГОДУ
+          </h4>
           {tabMassiv.map((item, index) => {
             return (
               <button
@@ -75,8 +78,8 @@ const Program = () => {
         </div>
         <div className="component">{Component}</div>
       </Container>
-    </ProgramWrapper>
+    </AdmissionWrapper>
   );
 };
 
-export default Program;
+export default AdmissionInfo;

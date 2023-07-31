@@ -7,37 +7,42 @@ import useWindowDimensions from "../../../../../Hooks/useWindow";
 
 export const LINKS = [
   {
-    name: "Abituriyentlar",
+    name: "Главный",
     path: "/",
+    id: 0,
+  },
+  {
+    name: "Абитуриентам",
+    path: "/abiturient",
     id: 1,
   },
   {
-    name: "Biz haqimizda",
+    name: "Обучение для иностранцев",
     path: "/",
     id: 2,
   },
   {
-    name: "Chet elliklar uchun ta'lim",
+    name: "Программы обучения",
     path: "/",
     id: 3,
   },
   {
-    name: "O'quv dasturlari",
+    name: "Студентам",
     path: "/",
     id: 4,
   },
   {
-    name: "Talabalar",
+    name: "Партнерам",
     path: "/",
     id: 5,
   },
   {
-    name: "Hamkorlar",
+    name: "Об Академии",
     path: "/",
     id: 6,
   },
   {
-    name: "Aloqa",
+    name: "Контакты",
     path: "/",
     id: 7,
   },

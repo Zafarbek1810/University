@@ -1,7 +1,7 @@
 import React from "react";
 import { BeltWrapper } from "./style";
 import Container from "../../../Common/Container";
-import LogoSvg from "../../../Common/Svgs/LogoSvg";
+import Logo2 from "../../../Common/Svgs/Logo2";
 
 const Belt = () => {
   return (
@@ -9,10 +9,10 @@ const Belt = () => {
       <Container>
         <div className="belt">
           <div className="logo">
-            <LogoSvg />
+            <Logo2 />
           </div>
           <h4 className="title">
-          BU YERDA TANIQLI RUS VA XORIJIY TADBIRKORLAR, DAVLAT ARBOBLARI <img src="/images/span-img.png" alt="" /> MA’RUZALAR O’QIYDI
+          У НАС ЧИТАЮТ ЛЕКЦИИ ИЗВЕСТНЫЕ РОССИЙСКИЕ И ЗАРУБЕЖНЫЕ ПРЕДПРИНИМАТЕЛИ<img src="/images/span-img.png" alt="" /> И ГОСУДАРСТВЕННЫЕ ДЕЯТЕЛИ
           </h4>
         </div>
       </Container>

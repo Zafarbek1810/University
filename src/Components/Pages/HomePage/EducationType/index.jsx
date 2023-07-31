@@ -7,32 +7,32 @@ import { Item1, Item2, Item3, Item4, Item5, Item6 } from "./Item";
 const EducationType = () => {
     const items = [
         {
-            label: "01 Universitetdan oldingi tayyorgarlik",
+            label: "Довузовская подготовка",
             key: "1",
             children: <Item1 />,
         },
         {
-            label: "02 Oliy ma'lumot (bakalavr darajasi)",
+            label: "Высшее образование (бакалавриат)",
             key: "2",
             children: <Item2 />,
         },
         {
-            label: "03 Kollej",
+            label: "Колледж",
             key: "3",
             children: <Item3 />,
         },  
         {
-            label: "04 Uzluksiz ta'lim dasturi",
+            label: "Программа непрерывного образования",
             key: "4",
             children: <Item4 />,
         },  
         {
-            label: "05 Akademiya xabarchisi",
+            label: "Высшая школа управленческого мастерства",
             key: "5",
             children: <Item5 />,
         },  
         {
-            label: "06 Boshqaruv mukammalligi oliy maktabi",
+            label: "Вестник академии",
             key: "6",
             children: <Item6 />,
         },  
@@ -41,8 +41,9 @@ const EducationType = () => {
   return (
     <EducationTypeWrapper>
       <Container>
-        <h3 className="title">Ta&apos;lim turlari</h3>
-        <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+        <h3 className="title">ВИДЫ ОБРАЗОВАНИЯ</h3>
+        <p className="description">
+          </p>
         <Tabs
           tabPosition="left"
           items={items}
