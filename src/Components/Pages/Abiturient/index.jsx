@@ -4,6 +4,8 @@ import { AbiturientWrapper } from './style';
 import AbiturientBanner from './Banner';
 import Form from "../HomePage/Form"
 import AdmissionInfo from './AdmissionInfo';
+import HowToProced from './HowToProced';
+import Dormitory from './Dormitory';
 
 const Abiturient = () => {
     return (
@@ -13,6 +15,8 @@ const Abiturient = () => {
             <AbiturientBanner/>
             <Form/>
             <AdmissionInfo/>
+            <HowToProced/>
+            <Dormitory/>
             </div>
         </AbiturientWrapper>
     );

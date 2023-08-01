@@ -91,11 +91,12 @@ const MainHeaderWrapper = styled.div`
           transition: 300ms;
         }
       }
-
       .active {
-        color: #007aff;
-      }
+        color: #007aff !important;
     }
+
+    }
+    
 
     .links_cont {
       width: 80% !important;
@@ -127,6 +128,9 @@ const MainHeaderWrapper = styled.div`
         transition: 300ms;
         color: #007aff;
       }
+    }
+      .active {
+        color: #007aff !important;
     }
 
     a,

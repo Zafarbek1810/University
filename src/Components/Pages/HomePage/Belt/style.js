@@ -7,9 +7,12 @@ const BeltWrapper = styled.div`
 
   .belt {
     .logo {
+      img{
+
         path {
           fill: #fff !important;
         }
+      }
     }
     .title {
       color: #fff;

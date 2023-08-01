@@ -4,6 +4,7 @@ import BurgerList from "./Components/BurgerList";
 import { HeaderContext } from "../../../../../Context/HeaderContext";
 import { MainHeaderWrapper } from "./MainHeaderWrapper";
 import useWindowDimensions from "../../../../../Hooks/useWindow";
+import { useRouter } from "next/router";
 
 export const LINKS = [
   {
@@ -52,6 +53,7 @@ const MainHeader = ({ isFixed }) => {
   const [header, setHeader] = useState("header");
   const { burger, handleBurger, setBurger } = useContext(HeaderContext);
   const ref = useRef(null);
+  const router = useRouter();
 
   useEffect(() => {
     const listenScrollEvent = () => {
@@ -80,34 +82,89 @@ const MainHeader = ({ isFixed }) => {
     };
   }, []);
 
-
   return (
     <MainHeaderWrapper ref={ref} isFixed={isFixed}>
       <div className={`content ${header}`}>
-  
-       <div className="logo">
+        <div className="logo">
           <MyLink to="/" onClick={() => setBurger((p) => !p)}>
-            <img
-              src="/images/logo.svg"
-              width={100}
-              height={72}
-            />
+            <img src="/images/logo.svg" width={100} height={72} />
           </MyLink>
-        </div> 
-     
-          <ul className="links_cont">
-            {LINKS.map(({ name, path, id }) => (
-              <li key={id}>
-                <MyLink
-                  to={path}
-                >
-                  <div className="navs">
-                    <p>{name}</p>
-                  </div>
-                </MyLink>
-              </li>
-            ))}
-          </ul>
+        </div>
+
+        <ul className="links_cont">
+          <li>
+            <MyLink to="/">
+              <div className="navs">
+                <p className={router.pathname == "/" ? "active" : ""}>
+                  Главный
+                </p>
+              </div>
+            </MyLink>
+          </li>
+          <li>
+            <MyLink to="/abiturient">
+              <div className="navs">
+                <p className={router.pathname == "/abiturient" ? "active" : ""}>
+                Абитуриентам
+                </p>
+              </div>
+            </MyLink>
+          </li>
+          <li>
+            <MyLink to="/">
+              <div className="navs">
+                <p className={router.pathname == "/abs" ? "active" : ""}>
+                  Обучение для иностранцев
+                </p>
+              </div>
+            </MyLink>
+          </li>
+          <li>
+            <MyLink to="/">
+              <div className="navs">
+                <p className={router.pathname == "/abs" ? "active" : ""}>
+                  Программы обучения
+                </p>
+              </div>
+            </MyLink>
+          </li>
+          <li>
+            <MyLink to="/">
+              <div className="navs">
+                <p className={router.pathname == "/abs" ? "active" : ""}>
+                  Студентам
+                </p>
+              </div>
+            </MyLink>
+          </li>
+          <li>
+            <MyLink to="/">
+              <div className="navs">
+                <p className={router.pathname == "/abs" ? "active" : ""}>
+                  Партнерам
+                </p>
+              </div>
+            </MyLink>
+          </li>
+          <li>
+            <MyLink to="/">
+              <div className="navs">
+                <p className={router.pathname == "/abs" ? "active" : ""}>
+                  Об Академии
+                </p>
+              </div>
+            </MyLink>
+          </li>
+          <li>
+            <MyLink to="/">
+              <div className="navs">
+                <p className={router.pathname == "/abs" ? "active" : ""}>
+                  Контакты
+                </p>
+              </div>
+            </MyLink>
+          </li>
+        </ul>
         <div
           onClick={handleBurger}
           className={`burger-btn ${burger ? "open" : "close"}`}

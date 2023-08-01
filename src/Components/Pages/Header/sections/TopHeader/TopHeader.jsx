@@ -44,6 +44,10 @@ const TopHeader = () => {
               style={{
                 width: 80,
               }}
+              defaultValue={{
+                value: "ru",
+                label: "РУС",
+              }}
               onChange={handleChange}
               filterOption={(input, option) =>
                 (option?.label ?? "").includes(input)
@@ -69,7 +73,7 @@ const TopHeader = () => {
               ]}
             />
           </div>
-          <button className="myBtn">Ro’yxatdan o‘tish</button>
+          <button className="myBtn">Заявка на обучение</button>
         </div>
       </div>
     </TopHeaderWrapper>
