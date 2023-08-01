@@ -77,3 +77,4 @@ const Dormitory = () => {
 };
 
 export default Dormitory;
+
