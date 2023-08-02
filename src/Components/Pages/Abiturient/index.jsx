@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header';  
+import Footer from '../Footer';  
 import { AbiturientWrapper } from './style';
 import AbiturientBanner from './Banner';
 import Form from "../HomePage/Form"
@@ -17,7 +18,9 @@ const Abiturient = () => {
             <AdmissionInfo/>
             <HowToProced/>
             <Dormitory/>
+            <Form/>
             </div>
+            <Footer/>
         </AbiturientWrapper>
     );
 };

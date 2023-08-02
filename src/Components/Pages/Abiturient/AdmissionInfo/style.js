@@ -132,6 +132,52 @@ const TabWrapper = styled.div`
   }
 }
 
+
+@media (max-width: 992px) {
+  .wrapper{
+    .item{
+      .left{
+        width: 70%;
+      }
+      .right{
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper{
+    .item{
+      width: 100%;
+      .left{
+        width: 65%;
+      }
+      .right{
+        width: 35%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper{
+    padding: 0;
+    .item{
+      flex-direction: column;
+      gap: 20px;
+      .left{
+        width: 100%;
+      }
+      .right{
+        width: 100%;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+
 `
 
 export  {AdmissionWrapper, TabWrapper};

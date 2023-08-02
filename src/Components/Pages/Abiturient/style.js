@@ -12,6 +12,7 @@ const AbiturientWrapper = styled.div`
 
     .main{
         padding-top: 100px;
+        padding-bottom: 72px;
     }
 
 `

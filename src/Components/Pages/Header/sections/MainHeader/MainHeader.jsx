@@ -19,12 +19,12 @@ export const LINKS = [
   },
   {
     name: "Обучение для иностранцев",
-    path: "/",
+    path: "/foreigners",
     id: 2,
   },
   {
     name: "Программы обучения",
-    path: "/",
+    path: "/program",
     id: 3,
   },
   {
@@ -111,18 +111,18 @@ const MainHeader = ({ isFixed }) => {
             </MyLink>
           </li>
           <li>
-            <MyLink to="/">
+            <MyLink to="/foreigners">
               <div className="navs">
-                <p className={router.pathname == "/abs" ? "active" : ""}>
+                <p className={router.pathname == "/foreigners" ? "active" : ""}>
                   Обучение для иностранцев
                 </p>
               </div>
             </MyLink>
           </li>
           <li>
-            <MyLink to="/">
+            <MyLink to="/program">
               <div className="navs">
-                <p className={router.pathname == "/abs" ? "active" : ""}>
+                <p className={router.pathname == "/program" ? "active" : ""}>
                   Программы обучения
                 </p>
               </div>

@@ -65,9 +65,16 @@ const Dormitory = () => {
             >
               <SwiperSlide>
                 <img src="/images/dormitory.png" alt="" />
+                <p>2-х и 3-х местное размещение</p>
               </SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
+              <SwiperSlide>
+                <img src="/images/dormitory.png" alt="" />
+                <p>2-х и 3-х местное размещение</p>
+                </SwiperSlide>
+              <SwiperSlide>
+                <img src="/images/dormitory.png" alt="" />
+                <p>2-х и 3-х местное размещение</p>
+                </SwiperSlide>
             </Swiper>
           </div>
         </div>

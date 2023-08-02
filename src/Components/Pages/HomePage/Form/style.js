@@ -30,6 +30,15 @@ const FormWrapper = styled.div`
     gap: 22px;
     justify-content: space-between;
   }
+  input {
+    border-color: #D0D5DD !important;
+    &:focus {
+      outline: none !important;
+      border-color: #619DFF !important;
+      box-shadow: red !important;
+      /* box-shadow: 0 0 1px 1px red, 0 0 1px 2px rgba(255, 255, 255, 0.9); */
+    }
+  }
 
   .label {
     width: 25%;
@@ -88,7 +97,6 @@ const FormWrapper = styled.div`
       }
     }
   }
-
 `;
 
 export default FormWrapper;

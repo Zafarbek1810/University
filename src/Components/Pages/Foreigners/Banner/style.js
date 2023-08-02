@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 
-const AbiturientBannerWrapper = styled.div`
-/* height: calc(100vh - 250px); */
+const ForeignersBannerWrapper = styled.div`
 padding: 72px 0 144px;
   .wrapper {
     display: flex;
@@ -31,12 +30,10 @@ padding: 72px 0 144px;
     }
   }
 
-
   @media (max-width: 768px) {
     padding: 72px 0 72px;
     .wrapper {
       flex-direction: column;
-      gap: 0;
       .left {
         width: 100%;
         .title {
@@ -44,22 +41,21 @@ padding: 72px 0 144px;
           line-height: 48px;
         }
       }
+
       .right {
         width: 100%;
         .descr {
           font-size: 18px;
           line-height: 24px;
-
         }
       }
     }
   }
 
-  @media (max-width: 576px) {
-    padding: 72px 0 72px;
+  @media (max-width: 480px) {
+    padding: 48px 0 48px;
     .wrapper {
       flex-direction: column;
-      gap: 0;
       .left {
         width: 100%;
         .title {
@@ -67,12 +63,12 @@ padding: 72px 0 144px;
           line-height: 32px;
         }
       }
+
       .right {
         width: 100%;
         .descr {
           font-size: 16px;
           line-height: 24px;
-
         }
       }
     }
@@ -80,4 +76,4 @@ padding: 72px 0 144px;
   
 `;
 
-export default AbiturientBannerWrapper;
+export default ForeignersBannerWrapper;

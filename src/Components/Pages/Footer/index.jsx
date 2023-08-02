@@ -44,25 +44,25 @@ const Footer = () => {
             </div>
           </div>
           <div className="bottom">
-          <div className="logo">
-           <LogoSvg/>
-          </div>
+            <div className="logo">
+              <img src="/images/logo.svg" />
+            </div>
 
-          <div className="center">
-            <MyLink to="/">ufa.uz - All rights reserved.</MyLink>
-          </div>
+            <div className="center">
+              <MyLink to="/">ufa.uz - All rights reserved.</MyLink>
+            </div>
 
-          <div className="social">
-            <MyLink to="/">
-              <FacebookSvg />
-            </MyLink>
-            <MyLink to="/">
-              <InstagramSvg />
-            </MyLink>
-            <MyLink to="/">
-              <TelegramSvg />
-            </MyLink>
-          </div> 
+            <div className="social">
+              <MyLink to="/">
+                <FacebookSvg />
+              </MyLink>
+              <MyLink to="/">
+                <InstagramSvg />
+              </MyLink>
+              <MyLink to="/">
+                <TelegramSvg />
+              </MyLink>
+            </div>
           </div>
           {/* <div className="logo">
             <img src="/images/logo.svg" alt="" />
