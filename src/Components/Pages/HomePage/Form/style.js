@@ -31,10 +31,10 @@ const FormWrapper = styled.div`
     justify-content: space-between;
   }
   input {
-    border-color: #D0D5DD !important;
+    border-color: #d0d5dd !important;
     &:focus {
       outline: none !important;
-      border-color: #619DFF !important;
+      border-color: #619dff !important;
       box-shadow: red !important;
       /* box-shadow: 0 0 1px 1px red, 0 0 1px 2px rgba(255, 255, 255, 0.9); */
     }
@@ -61,6 +61,13 @@ const FormWrapper = styled.div`
 
   .myBtn {
     min-width: 25%;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
   }
 
   @media (max-width: 768px) {
@@ -94,6 +101,17 @@ const FormWrapper = styled.div`
           position: absolute;
           left: 5px;
         }
+      }
+
+      .myBtn {
+        min-width: 100%;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        font-family: SF Pro Display;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
       }
     }
   }

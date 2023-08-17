@@ -3,8 +3,8 @@ import { styled } from "styled-components";
 const ProgramsWrapper = styled.div`
   padding: 72px 0;
 
-  .top{
-    .filterBtn{
+  .top {
+    .filterBtn {
       display: none;
     }
     .title {
@@ -12,10 +12,10 @@ const ProgramsWrapper = styled.div`
       font-family: SF Pro Display;
       font-size: 48px;
       font-weight: 600;
-    line-height: 60px;
-    margin-bottom: 42px;
+      line-height: 60px;
+      margin-bottom: 42px;
+    }
   }
-}
 
   .wrapper {
     display: flex;
@@ -108,9 +108,6 @@ const ProgramsWrapper = styled.div`
     }
   }
 
-  
-  
-
   @media (max-width: 992px) {
     .title {
       font-size: 36px;
@@ -164,30 +161,29 @@ const ProgramsWrapper = styled.div`
       line-height: 32px;
     }
 
-    .wrapper{
+    .wrapper {
       justify-content: space-between;
     }
 
-    .category{
+    .category {
       width: 40%;
-      .box{
-        &__title{
+      .box {
+        &__title {
           font-size: 18px;
           line-height: 24px;
         }
 
         &__item,
-        &__item-switch{
+        &__item-switch {
           font-size: 14px;
           line-height: 20px;
         }
-          
       }
     }
 
-    .main{
-      width:60%;
-      .card{
+    .main {
+      width: 60%;
+      .card {
         width: 100%;
       }
     }
@@ -195,11 +191,11 @@ const ProgramsWrapper = styled.div`
 
   @media (max-width: 540px) {
     padding: 72px 0 72px;
-    .top{
+    .top {
       display: flex;
       justify-content: space-between;
-      align-items:start;
-      .filterBtn{
+      align-items: start;
+      .filterBtn {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -210,24 +206,22 @@ const ProgramsWrapper = styled.div`
         cursor: pointer;
         font-size: 20px;
 
-        svg{
+        svg {
           width: 20px;
         }
-        
       }
 
-      .title{
+      .title {
         font-size: 24px;
         line-height: 32px;
       }
-
     }
 
-    .category{
+    .category {
       display: none;
     }
 
-    .main{
+    .main {
       width: 100%;
     }
   }

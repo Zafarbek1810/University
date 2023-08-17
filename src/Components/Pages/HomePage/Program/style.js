@@ -130,19 +130,21 @@ const TabWrapper = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-
+      
       svg{
         width: 32px;
         margin-left: 8px;
+        transition: 300ms ease-in-out;
       }
     }
   }
-
+  
   .card:hover button{
     color: #007aff;
     cursor: pointer;
     svg{
       stroke: #007aff;
+      transform: translateX(10px);
     }
   }
 
@@ -200,6 +202,17 @@ const TabWrapper = styled.div`
         font-size: 12px;
         line-height: 20px;
       }
+
+      button{
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 22px;
+
+        svg{
+          width: 24px;
+          height: 24px;
+        }
+
     }
   }
 `;

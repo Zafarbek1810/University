@@ -29,22 +29,22 @@ export const LINKS = [
   },
   {
     name: "Студентам",
-    path: "/",
+    path: "/student",
     id: 4,
   },
   {
     name: "Партнерам",
-    path: "/",
+    path: "/partners",
     id: 5,
   },
   {
     name: "Об Академии",
-    path: "/",
+    path: "/academy",
     id: 6,
   },
   {
     name: "Контакты",
-    path: "/",
+    path: "/contacts",
     id: 7,
   },
 ];
@@ -129,36 +129,36 @@ const MainHeader = ({ isFixed }) => {
             </MyLink>
           </li>
           <li>
-            <MyLink to="/">
+            <MyLink to="/student">
               <div className="navs">
-                <p className={router.pathname == "/abs" ? "active" : ""}>
+                <p className={router.pathname == "/student" ? "active" : ""}>
                   Студентам
                 </p>
               </div>
             </MyLink>
           </li>
           <li>
-            <MyLink to="/">
+            <MyLink to="/partners">
               <div className="navs">
-                <p className={router.pathname == "/abs" ? "active" : ""}>
+                <p className={router.pathname == "/partners" ? "active" : ""}>
                   Партнерам
                 </p>
               </div>
             </MyLink>
           </li>
           <li>
-            <MyLink to="/">
+            <MyLink to="/academy">
               <div className="navs">
-                <p className={router.pathname == "/abs" ? "active" : ""}>
+                <p className={router.pathname == "/academy" ? "active" : ""}>
                   Об Академии
                 </p>
               </div>
             </MyLink>
           </li>
           <li>
-            <MyLink to="/">
+            <MyLink to="/contacts">
               <div className="navs">
-                <p className={router.pathname == "/abs" ? "active" : ""}>
+                <p className={router.pathname == "/contacts" ? "active" : ""}>
                   Контакты
                 </p>
               </div>

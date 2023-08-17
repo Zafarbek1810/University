@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.3",
     "antd": "^5.7.2",
     "aos": "^2.3.4",
     "axios": "^1.4.0",
@@ -21,6 +24,7 @@
     "react-i18next": "^12.3.1",
     "react-number-format": "^5.2.2",
     "react-observer-api": "^1.0.14",
+    "react-yandex-maps": "^4.6.0",
     "styled-components": "^6.0.5",
     "swiper": "^10.0.4",
     "use-context-selector": "^1.4.1"

@@ -1,7 +1,6 @@
 import React from 'react';
 import HomePageWrapper from './style';
 import Header from '../Header';
-import Banner from './Banner';
 import Form from './Form';
 import EducationType from './EducationType';
 import Program from './Program';
@@ -10,13 +9,14 @@ import Partners from './Partners';
 import Belt from './Belt';
 import News from './News';
 import Footer from '../Footer';
+import NewBanner from './NewBanner';
 
 const HomePage = () => {
     return (
         <HomePageWrapper>
             <Header/>
             <div className="main">
-            <Banner/>
+            <NewBanner/>
             <Form/>
             <EducationType/>
             <Program/>

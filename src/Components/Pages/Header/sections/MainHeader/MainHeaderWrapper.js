@@ -80,7 +80,7 @@ const MainHeaderWrapper = styled.div`
 
     .navs {
       p {
-        color: #fff;
+        color: #000;
         font-family: SF Pro Display;
         font-weight: 500;
         transition: 300ms;

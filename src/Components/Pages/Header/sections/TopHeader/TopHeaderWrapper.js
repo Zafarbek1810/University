@@ -10,11 +10,11 @@ const TopHeaderWrapper = styled.div`
     align-items: center !important;
   }
   .logo {
-    width : 200px;
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
+    img {
       width: 100%;
     }
   }
@@ -86,10 +86,16 @@ const TopHeaderWrapper = styled.div`
       border-radius: 10px;
       background: #007aff;
       padding: 16px 33px;
+      color: #fff;
+      text-align: center;
+      font-family: SF Pro Display;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
     }
   }
   @media (max-width: 1024px) {
-      display: none;
+    display: none;
   }
 
   @media (max-width: 767px) {

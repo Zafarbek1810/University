@@ -138,7 +138,7 @@ const Programs = () => {
           </div>
           <div className="main">
             {[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15].map((item, index) => (
-            <div className="card">
+            <div key={index} className="card">
               <div className="card__img">
                 <img src="/images/program-item.png" alt="" />
               </div>

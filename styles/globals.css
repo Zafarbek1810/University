@@ -47,6 +47,16 @@ a {
   
 }
 
+.ant-select-dropdown {
+  min-width: 200px !important;
+  width: 200px !important;
+}
+.content .ant-select-dropdown {
+  min-height: 50px;
+  min-width: 100% !important;
+  width: 100% !important;
+}
+
 .ant-drawer-content-wrapper .category .box__item, .box__item-switch{
   list-style: none;
   display: flex;
@@ -58,6 +68,25 @@ a {
 
 .ant-drawer-header{
   position: relative;
+}
+input:-internal-autofill-selected{
+  background-color: #fff !important;
+}
+
+.tabs-drawer{
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs-drawer button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background: none;
+  color: #111;
+  padding: 16px 0;
+  font-size: 18px;
 }
 
 .closeIcon{
