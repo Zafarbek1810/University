@@ -6,7 +6,7 @@ const TabPartners3 = () => {
         <TabsWrapper>
             <div className="wrapper">
         {[...Array(12)].map((item, index) => (
-          <div className="box">
+          <div className="box" key={index}>
             <img src="/images/partners3.png" alt="" />
           </div>
         ))}
