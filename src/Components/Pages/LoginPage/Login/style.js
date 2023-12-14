@@ -30,7 +30,6 @@ const LoginWrapper = styled.div`
         border-radius: 10px;
         border: 1px solid #d0d5dd;
         background: #fff;
-        margin-bottom: 20px;
         input {
           padding: 14px 14px 14px 40px;
           border: none;
@@ -51,14 +50,15 @@ const LoginWrapper = styled.div`
       }
 
       button {
-        margin-top: 30px;
         cursor: pointer;
-        padding: 16px 33px;
         width: 100%;
         border-radius: 10px;
         background: #007aff;
-        color: #fff;
+        color: #fff !important;
         border: none;
+        span{
+          color: #fff;
+        }
       }
     }
 
