@@ -4,6 +4,7 @@ const FormWrapper = styled.div`
   padding: 48px 75px;
   background: #f9fafb;
   border-radius: 16px;
+  margin-top: 20px;
 
   .title {
     font-family: SF Pro Display;

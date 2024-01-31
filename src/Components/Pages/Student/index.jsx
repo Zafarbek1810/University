@@ -16,11 +16,13 @@ import RightIconSvg from "../../Common/Svgs/RightIconSvg";
 import FilterSvg from "../../Common/Svgs/FilterSvg";
 import CloseIcon from "../../Common/Svgs/CloseIcon";
 import { Drawer } from "antd";
+import { useTranslation } from "react-i18next";
 
 const Student = () => {
   const [activePage, setActivePage] = useState(1);
   const router = useRouter();
   const [open, setOpen] = useState(false);
+  const {t} = useTranslation();
 
   const showDrawer = () => {
     setOpen(true);
@@ -35,23 +37,23 @@ const Student = () => {
       Component = <Tab1 />;
       break;
     }
-    case 2: {
-      Component = <Tab2 />;
-      break;
-    }
+    // case 2: {
+    //   Component = <Tab2 />;
+    //   break;
+    // }
     case 3: {
       // Component = <Tab3 />;
       router.push("/login");
       break;
     }
-    case 4: {
-      Component = <Tab4 />;
-      break;
-    }
-    case 5: {
-      Component = <Tab5 />;
-      break;
-    }
+    // case 4: {
+    //   Component = <Tab4 />;
+    //   break;
+    // }
+    // case 5: {
+    //   Component = <Tab5 />;
+    //   break;
+    // }
     case 6: {
       Component = <Tab6 />;
       break;
@@ -68,35 +70,35 @@ const Student = () => {
 
   const tabMassiv = [
     {
-      title: "Студентам",
+      title: t("student.studentam.tab1"),
       id: 1,
     },
+    // {
+    //   title: "Расписание занятий",
+    //   id: 2,
+    // },
     {
-      title: "Расписание занятий",
-      id: 2,
-    },
-    {
-      title: "Личный кабинет студента",
+      title: t("student.login.tab5"),
       id: 3,
     },
+    // {
+    //   title: "Мобильное приложение",
+    //   id: 4,
+    // },
+    // {
+    //   title: "Стоимость обучения",
+    //   id: 5,
+    // },
     {
-      title: "Мобильное приложение",
-      id: 4,
-    },
-    {
-      title: "Стоимость обучения",
-      id: 5,
-    },
-    {
-      title: "Студсовет",
+      title: t("student.studsovet.tab2"),
       id: 6,
     },
     {
-      title: "Библиотека",
+      title: t("student.library.tab3"),
       id: 7,
     },
     {
-      title: "Трудоустройство",
+      title: t("student.employment.tab4"),
       id: 8,
     },
   ];

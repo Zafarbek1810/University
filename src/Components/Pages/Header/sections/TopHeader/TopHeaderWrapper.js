@@ -22,7 +22,7 @@ const TopHeaderWrapper = styled.div`
     margin-left: auto;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 70%;
     span {
       font-family: SF Pro Display;
       font-size: 16px;

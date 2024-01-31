@@ -1,13 +1,15 @@
 import React from "react";
 import { PartnerWrapper } from "../Partner/style";
 import Container from "../../../Common/Container";
+import { useTranslation } from "react-i18next";
 
 const PartnerBottom = () => {
+  const { t } = useTranslation();
   return (
     <PartnerWrapper>
       <Container>
         <div className="bottom">
-          <p className="title">ВУЗы-партнеры</p>
+          <p className="title">{t("partnerPage.vuzi.title")}</p>
           <div className="cards">
             {[...Array(6)].map((item, index) => (
               <div className="card" key={index}>

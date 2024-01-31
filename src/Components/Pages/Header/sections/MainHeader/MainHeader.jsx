@@ -3,8 +3,8 @@ import MyLink from "../../../../Common/MyLink";
 import BurgerList from "./Components/BurgerList";
 import { HeaderContext } from "../../../../../Context/HeaderContext";
 import { MainHeaderWrapper } from "./MainHeaderWrapper";
-import useWindowDimensions from "../../../../../Hooks/useWindow";
 import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
 
 export const LINKS = [
   {
@@ -54,6 +54,9 @@ const MainHeader = ({ isFixed }) => {
   const { burger, handleBurger, setBurger } = useContext(HeaderContext);
   const ref = useRef(null);
   const router = useRouter();
+  const { t } = useTranslation();
+
+  console.log(t)
 
   useEffect(() => {
     const listenScrollEvent = () => {
@@ -95,8 +98,8 @@ const MainHeader = ({ isFixed }) => {
           <li>
             <MyLink to="/">
               <div className="navs">
-                <p className={router.pathname == "/" ? "active" : ""}>
-                  Главный
+                <p  className={router.pathname == "/" ? "active" : ""}>
+                {t("header.link1")}
                 </p>
               </div>
             </MyLink>
@@ -104,35 +107,35 @@ const MainHeader = ({ isFixed }) => {
           <li>
             <MyLink to="/abiturient">
               <div className="navs">
-                <p className={router.pathname == "/abiturient" ? "active" : ""}>
-                Абитуриентам
+                <p  className={router.pathname == "/abiturient" ? "active" : ""}>
+                {t("header.link2")}
                 </p>
               </div>
             </MyLink>
           </li>
-          <li>
+          {/* <li>
             <MyLink to="/foreigners">
               <div className="navs">
                 <p className={router.pathname == "/foreigners" ? "active" : ""}>
-                  Обучение для иностранцев
+                {t("header.link3")}
                 </p>
               </div>
             </MyLink>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <MyLink to="/program">
               <div className="navs">
                 <p className={router.pathname == "/program" ? "active" : ""}>
-                  Программы обучения
+                {t("header.link4")}
                 </p>
               </div>
             </MyLink>
-          </li>
+          </li> */}
           <li>
             <MyLink to="/student">
               <div className="navs">
-                <p className={router.pathname == "/student" ? "active" : ""}>
-                  Студентам
+                <p  className={router.pathname == "/student" ? "active" : ""}>
+                {t("header.link5")}
                 </p>
               </div>
             </MyLink>
@@ -140,8 +143,8 @@ const MainHeader = ({ isFixed }) => {
           <li>
             <MyLink to="/partners">
               <div className="navs">
-                <p className={router.pathname == "/partners" ? "active" : ""}>
-                  Партнерам
+                <p  className={router.pathname == "/partners" ? "active" : ""}>
+                {t("header.link6")}
                 </p>
               </div>
             </MyLink>
@@ -149,8 +152,8 @@ const MainHeader = ({ isFixed }) => {
           <li>
             <MyLink to="/academy">
               <div className="navs">
-                <p className={router.pathname == "/academy" ? "active" : ""}>
-                  Об Академии
+                <p  className={router.pathname == "/academy" ? "active" : ""}>
+                {t("header.link7")}
                 </p>
               </div>
             </MyLink>
@@ -158,8 +161,8 @@ const MainHeader = ({ isFixed }) => {
           <li>
             <MyLink to="/contacts">
               <div className="navs">
-                <p className={router.pathname == "/contacts" ? "active" : ""}>
-                  Контакты
+                <p  className={router.pathname == "/contacts" ? "active" : ""}>
+                {t("header.link8")}
                 </p>
               </div>
             </MyLink>

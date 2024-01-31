@@ -9,79 +9,73 @@ import AboutIcon3 from "../../../Common/Svgs/AboutIcon3";
 import AboutIcon4 from "../../../Common/Svgs/AboutIcon4";
 import AboutIcon5 from "../../../Common/Svgs/AboutIcon5";
 import AboutIcon6 from "../../../Common/Svgs/AboutIcon6";
-
-const countData = [
-  {
-    count: 2020,
-    info: "Год основания",
-    duration: 3,
-    initial: 0,
-  },
-  {
-    count: 12,
-    info: "Программ бакалавриата",
-    duration: 3,
-    initial: 0,
-  },
-  {
-    count: 100,
-    info: "Партнеров Работодателей",
-    duration: 3,
-    initial: 0,
-    suffix: "+",
-  },
-];
-
-const cardData = [
-  {
-    icon: <AboutIcon1 />,
-    title: "Международные стандарты обучения",
-    descr:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna",
-  },
-  {
-    icon: <AboutIcon2 />,
-    title: "Возможность совмещать учебу и работу",
-    descr:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna",
-  },
-  {
-    icon: <AboutIcon3 />,
-    title: "Практическая направленность",
-    descr:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna",
-  },
-  {
-    icon: <AboutIcon4 />,
-    title: "Гибкая форма оплаты",
-    descr:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna",
-  },
-  {
-    icon: <AboutIcon5 />,
-    title: "Государственный диплом",
-    descr:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna",
-  },
-  {
-    icon: <AboutIcon6 />,
-    title: "Удобная форма обучения",
-    descr:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  labore et dolore magna",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
+  const countData = [
+    {
+      count: 8,
+      info: t("obakademiy.counter1"),
+      duration: 3,
+      initial: 0,
+    },
+    {
+      count: 300,
+      info: t("obakademiy.counter2"),
+      duration: 3,
+      initial: 0,
+      suffix: "+",
+    },
+    {
+      count: 6,
+      info: t("obakademiy.counter3"),
+      duration: 3,
+      initial: 0,
+      suffix: "+",
+    },
+  ];
+
+  const cardData = [
+    {
+      icon: <AboutIcon1 />,
+      title: t("obakademiy.card_title1"),
+      descr: t("obakademiy.card_descr1"),
+    },
+    {
+      icon: <AboutIcon2 />,
+      title: t("obakademiy.card_title2"),
+      descr: t("obakademiy.card_descr2"),
+    },
+    {
+      icon: <AboutIcon3 />,
+      title: t("obakademiy.card_title3"),
+      descr: t("obakademiy.card_descr3"),
+    },
+    {
+      icon: <AboutIcon4 />,
+      title: t("obakademiy.card_title4"),
+      descr: t("obakademiy.card_descr4"),
+    },
+    {
+      icon: <AboutIcon5 />,
+      title: t("obakademiy.card_title5"),
+      descr: t("obakademiy.card_descr5"),
+    },
+    {
+      icon: <AboutIcon6 />,
+      title: t("obakademiy.card_title6"),
+      descr: t("obakademiy.card_descr6"),
+    },
+  ];
+
   return (
     <AboutWrapper>
       <Container>
         <div className="top">
-          <h4 className="title">ОБ АКАДЕМИИ</h4>
-          <p className="descr">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam
-          </p>
+          <h4 className="title">{t("obakademiy.title")}</h4>
+          <p className="descr">{t("obakademiy.descr")}</p>
           <div className="countUp">
             {countData.map((item) => (
               <CountAtom key={item.info} {...item} />
@@ -92,14 +86,10 @@ const About = () => {
           <div className="cards">
             {cardData.map((item) => (
               <div key={item.title} className="item">
-                <div className="icon">
-                  {item.icon}
-                </div>
+                <div className="icon">{item.icon}</div>
                 <div className="text">
                   <h4 className="title">{item.title}</h4>
-                  <p className="descr">
-                    {item.descr}
-                  </p>
+                  <p className="descr">{item.descr}</p>
                 </div>
               </div>
             ))}

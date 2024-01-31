@@ -1,14 +1,16 @@
 import React from "react";
 import NewsWrapper from "./style";
 import Container from "../../../Common/Container";
+import { useTranslation } from "react-i18next";
 
 const News = () => {
+  const {t} = useTranslation()
   return (
     <NewsWrapper>
       <Container>
-        <h4 className="title">НОВОСТИ</h4>
+        <h4 className="title">{t("news.title")}</h4>
         <div className="cards">
-          {[1, 2, 3, 4, 5, 6].map((item, index) => (
+          {[1, 2, 3].map((item, index) => (
             <div key={index} className="card">
               <div className="card-img">
                 <img src="/images/news.png" alt="" />
@@ -22,9 +24,9 @@ const News = () => {
           ))}
         </div>
 
-        <div className="btns">
+        {/* <div className="btns">
           <button>+ Ko&apos;proq ko&apos;rsatish</button>
-        </div>
+        </div> */}
       </Container>
     </NewsWrapper>
   );

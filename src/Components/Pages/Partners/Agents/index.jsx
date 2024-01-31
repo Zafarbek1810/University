@@ -1,22 +1,21 @@
 import React from 'react';
 import AgentsWrapper from './style';
 import Container from "../../../Common/Container"
+import { useTranslation } from 'react-i18next';
 
 const Agents = () => {
+    const {t} = useTranslation();
     return (
         <AgentsWrapper>
             <Container>
-            <h3 className="title">СОТРУДНИЧЕСТВО С АГЕНТАМИ</h3>
+            <h3 className="title">{t("partnerPage.agent.title")}</h3>
             <div className="bottom">
                 <div className="left">
                     <img src="/images/partners.png" alt="" />
                 </div>
                 <div className="right">
                     <p>
-                    Московская Академия Предпринимательства предлагает выгодные условия сотрудничества по набору на программы ВО, СПО, ДПО, послевузовского образования на условиях агентского договора.
-Условия обговариваются индивидуально. Агентские выплаты до 50% от стоимости программ.
-Условия обговариваются индивидуально. Агентские выплаты до 50% от стоимости программ.
-    Условия обговариваются индивидуально. Агентские выплаты до 50% от стоимости программ.
+                    {t("partnerPage.agent.text")}
                     </p>
                 </div>
             </div>

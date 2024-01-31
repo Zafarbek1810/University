@@ -15,7 +15,7 @@ const Abiturient = () => {
             <div className="main">
             <AbiturientBanner/>
             <Form/>
-            <AdmissionInfo/>
+            {/* <AdmissionInfo/> */}
             <HowToProced/>
             <Dormitory/>
             <Form/>

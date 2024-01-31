@@ -6,16 +6,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 const Dormitory = () => {
+  const {t} = useTranslation();
   return (
     <DormitoryWrapper>
       <Container>
         <div className="top">
-          <h3 className="title">ОБЩЕЖИТИЕ</h3>
+          <h3 className="title">{t("abiturient.dormitory.title")}</h3>
           <p className="descr">
-            Для проживания наших студентов мы предоставляем комфортные и
-            оснащенные комнаты.
+          {t("abiturient.dormitory.descr")}
           </p>
         </div>
         <div className="wrapper">
@@ -24,37 +25,37 @@ const Dormitory = () => {
               <div className="icon">
                 <ProcedIcon1 />
               </div>
-              <p>Проживание только для студентов</p>
+              <p>{t("abiturient.dormitory.li1")}</p>
             </div>
             <div className="item">
               <div className="icon">
                 <ProcedIcon1 />
               </div>
-              <p>Удобное расположение</p>
+              <p>{t("abiturient.dormitory.li2")}</p>
             </div>
             <div className="item">
               <div className="icon">
                 <ProcedIcon1 />
               </div>
-              <p>Регистрация иностранных граждан</p>
+              <p>{t("abiturient.dormitory.li3")}</p>
             </div>
             <div className="item">
               <div className="icon">
                 <ProcedIcon1 />
               </div>
-              <p>Охрана территории 24/7</p>
+              <p>{t("abiturient.dormitory.li4")}</p>
             </div>
             <div className="item">
               <div className="icon">
                 <ProcedIcon1 />
               </div>
-              <p>Спортзал</p>
+              <p>{t("abiturient.dormitory.li5")}</p>
             </div>
             <div className="item">
               <div className="icon">
                 <ProcedIcon1 />
               </div>
-              <p>Столовая</p>
+              <p>{t("abiturient.dormitory.li6")}</p>
             </div>
           </div>
           <div className="right">
@@ -65,15 +66,15 @@ const Dormitory = () => {
             >
               <SwiperSlide>
                 <img src="/images/dormitory.png" alt="" />
-                <p>2-х и 3-х местное размещение</p>
+                <p>{t("abiturient.dormitory.swiperText")}</p>
               </SwiperSlide>
               <SwiperSlide>
                 <img src="/images/dormitory.png" alt="" />
-                <p>2-х и 3-х местное размещение</p>
+                <p>{t("abiturient.dormitory.swiperText")}</p>
                 </SwiperSlide>
               <SwiperSlide>
                 <img src="/images/dormitory.png" alt="" />
-                <p>2-х и 3-х местное размещение</p>
+                <p>{t("abiturient.dormitory.swiperText")}</p>
                 </SwiperSlide>
             </Swiper>
           </div>

@@ -5,9 +5,11 @@ import InfoTab1 from "./InfoTab1";
 import InfoTab2 from "./InfoTab2";
 import InfoTab3 from "./InfoTab3";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Tab8 = () => {
   const [activePage, setActivePage] = useState(1);
+  const {t} = useTranslation()
 
   let Component = null;
   switch (activePage) {
@@ -42,10 +44,9 @@ const Tab8 = () => {
 
   return (
     <Tab8Wrapper>
-      <h3 className="title">ТРУДОУСТРОЙСТВО</h3>
+      <h3 className="title">{t("student.employment.tab4")}</h3>
       <p className="descr">
-        Центр трудоустройства — связующее звено между соискателями и
-        работодателями.
+      {t("student.employment.title")}
       </p>
 
       <div className="bottom">
@@ -55,32 +56,19 @@ const Tab8 = () => {
             <Tab6Icon />
           </div>
           <p>
-            Наша миссия — трудоустройство молодых специалистов — студентов и
-            выпускников ЧУ ВО МосАП, содействие их карьерному росту и
-            профессиональному развитию. В сферу наших приоритетных задач входят
-            информационно-консультативная поддержка соискателей и организация
-            рекрутинговых мероприятий.
+          {t("student.employment.subtitle")}
           </p>
         </div>
         <div className="box2">
-          <h6>Задачи студенческого совета:</h6>
+          <h6>{t("student.employment.cardTitle")}</h6>
           <p>
-            Привлечение студентов к решению всех вопросов, связанных с
-            подготовкой высококвалифицированных специалистов; Защита и
-            представление прав и интересов студентов; Содействие органам
-            управления Университета в организации досуга и быта студентов, в
-            пропаганде здорового образа жизни; Содействие структурным
-            подразделениям в проводимых ими мероприятиях в рамках
-            образовательного процесса; Информирование студентов о деятельности
-            вуза; Участие в формировании общественного мнения о студенческой
-            молодежи как реальной силе и стратегическом ресурсе развития
-            российского общества;
+          {t("student.employment.cardText")}
           </p>
         </div>
       </div>
 
 
-      <div className="info">
+      {/* <div className="info">
         <h3 className="title">ИНФОРМАЦИЯ</h3>
         <div className="tabs">
           {tabMassiv.map((item, index) => (
@@ -95,7 +83,7 @@ const Tab8 = () => {
           )}
         </div>
         <div className="component">{Component}</div>
-      </div>
+      </div> */}
     </Tab8Wrapper>
   );
 };

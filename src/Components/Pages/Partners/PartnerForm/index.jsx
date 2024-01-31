@@ -6,6 +6,7 @@ import FormUserSvg from "../../../Common/Svgs/FormUserSvg";
 import FormPhoneSvg from "../../../Common/Svgs/FormPhoneSvg";
 import { PatternFormat } from "react-number-format";
 import FormEmailSvg from "../../../Common/Svgs/FormEmailSvg";
+import { useTranslation } from "react-i18next";
 
 const PartnerForm = () => {
   const {
@@ -13,14 +14,14 @@ const PartnerForm = () => {
     formState: { errors },
     register,
   } = useForm();
+  const { t } = useTranslation();
 
   return (
     <PartnerFormWrapper>
       <Container>
-        <h5 className="title">Отправить запрос о сотрудничестве</h5>
+        <h5 className="title">{t("partnerPage.form.title")}</h5>
         <p>
-          Нажимая на кнопку, вы соглашаетесь с Политикой конфиденциальности и на
-          получение рассылок
+        {t("partnerPage.form.subtitle")}
         </p>
         <form>
           <div className="label">
@@ -29,7 +30,7 @@ const PartnerForm = () => {
               control={control}
               className="form-control"
               type="text"
-              placeholder="Имя"
+              placeholder={t("partnerPage.form.name")}
               required
               {...register("name", { required: true })}
             />
@@ -74,7 +75,7 @@ const PartnerForm = () => {
               control={control}
               className="form-control"
               type="text"
-              placeholder="Название компании и должность"
+              placeholder={t("partnerPage.form.company")}
               required
               {...register("name", { required: true })}
             />
@@ -84,7 +85,7 @@ const PartnerForm = () => {
               control={control}
               className="form-control"
               type="text"
-              placeholder="Город"
+              placeholder={t("partnerPage.form.city")}
               required
               {...register("name", { required: true })}
             />
@@ -94,7 +95,7 @@ const PartnerForm = () => {
               control={control}
               className="form-control"
               type="text"
-              placeholder="Сайт компании"
+              placeholder={t("partnerPage.form.site")}
               required
               {...register("name", { required: true })}
             />
@@ -104,13 +105,13 @@ const PartnerForm = () => {
               control={control}
               className="form-control"
               type="text"
-              placeholder="Ваше предложение"
+              placeholder={t("partnerPage.form.suggestion")}
               required
               {...register("name", { required: true })}
             />
           </div>
 
-          <div className="submit-btn">Записаться</div>
+          <div className="submit-btn">{t("partnerPage.form.btn")}</div>
         </form>
       </Container>
     </PartnerFormWrapper>

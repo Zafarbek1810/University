@@ -17,7 +17,7 @@ const Partners = () => {
         <Banner/>
         <Agents/>
         <Advantages/>
-        <Partner/>
+        {/* <Partner/> */}
         <PartnerBottom/>
         <PartnerForm/>
       </div>

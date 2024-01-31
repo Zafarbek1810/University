@@ -6,22 +6,25 @@ import FormPhoneSvg from "../../../Common/Svgs/FormPhoneSvg";
 import FormEmailSvg from "../../../Common/Svgs/FormEmailSvg";
 import { Controller, useForm } from "react-hook-form";
 import { PatternFormat } from "react-number-format";
+import { useTranslation } from "react-i18next";
 
 const Form = () => {
   const { control, formState: { errors }, register } = useForm();
+  const { t } = useTranslation();
+
   return (
-    <Container>
+    <Container >
       <FormWrapper>
         <h3 className="title">
-          Получи консультацию приемной комиссии, оставив заявку
+          {t("form.title")}
         </h3>
         <p className="descr">
-          Получи консультацию приемной комиссии, оставив заявку
+        {t("form.subtitle")}
         </p>
         <form>
           <div className="label">
             <FormUserSvg />
-            <input control={control} className="form-control" type="text" placeholder="Имя" required
+            <input control={control} className="form-control" type="text" placeholder={t("form.name")} required
               {...register("name", { required: true })}
             />
           </div>
@@ -53,7 +56,7 @@ const Form = () => {
             <input control={control} className="form-control" required {...register("email", { required: true })}  type="email" placeholder="E-mail" />
           </div>
           <button type="submit" className="myBtn">
-            Записаться
+          {t("form.button")}
           </button>
         </form>
       </FormWrapper>

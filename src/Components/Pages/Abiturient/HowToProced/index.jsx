@@ -4,54 +4,49 @@ import Container from "../../../Common/Container";
 import ProcedIcon1 from "../../../Common/Svgs/ProcedIcon1";
 import ProcedIcon2 from "../../../Common/Svgs/ProcedIcon2";
 import ProcedIcon3 from "../../../Common/Svgs/ProcedIcon3";
+import { useTranslation } from "react-i18next";
 
 const HowToProced = () => {
+  const {t} = useTranslation();
   return (
     <HowToProcedWrapper>
       <Container>
-        <h3 className="title">КАК ПОСТУПИТЬ</h3>
+        <h3 className="title">{t("abiturient.proced.h3title")}</h3>
         <div className="wrapper">
           <div className="box">
-            <span className="spanTitle">ШАГ 1</span>
-            <p className="title">Подготовить необходимый пакет документов:</p>
+            <span className="spanTitle">{t("abiturient.proced.spanTitle")} 1</span>
+            <p className="title">{t("abiturient.proced.title1")}</p>
             <ul>
-              <li>документ, удостоверяющий личность (паспорт)</li>
-              <li>документ об образовании (аттестат, диплом)</li>
+              <li>{t("abiturient.proced.li1")}</li>
+              <li>{t("abiturient.proced.li2")}</li>
               <li>
-                паспорт плательщика или копия, если договор заключается на
-                одного из родителей
+              {t("abiturient.proced.li3")}
               </li>
               <li>
-                2 фотографии 3х4 копия документа о смене фамилии (при наличии)
+              {t("abiturient.proced.li4")}
               </li>
             </ul>
             <p className="title">
-              Дополнительные документы, требуемые для подачи по электронной
-              почте или ФГУП «Почта России»*:
+            {t("abiturient.proced.title2")}
             </p>
             <ul>
               <li>
-                заявление для поступающих в Академию на программы среднего
-                профессионального образования или на программы бакалавриата
-                (двусторонняя печать на одном листе)
+              {t("abiturient.proced.li5")}
               </li>
-              <li>согласие на обработку персональных данных Мосап</li>
-              <li>заявление о согласии на зачисление</li>
+              <li>с{t("abiturient.proced.li6")}</li>
+              <li>{t("abiturient.proced.li7")}</li>
               <li>
-                * примеры заявлений только для подачи по электронной почте или
-                ФГУП «Почта России». Лица, подающие документы лично в приемную
-                комиссию не заполняют заявления заранее.
+              {t("abiturient.proced.li8")}
               </li>
             </ul>
             <p className="title">
-              Дополнительные документы для иностранных граждан:
+            {t("abiturient.proced.title3")}
             </p>
             <ul>
-              <li>перевод всех документов на русский язык</li>
-              <li>временная регистрация или копия</li>
+              <li>{t("abiturient.proced.li9")}</li>
+              <li>{t("abiturient.proced.li10")}</li>
               <li>
-                нострификация документа об образовании (справка) выданная
-                Главэкспертцентром (при необходимости)
+              {t("abiturient.proced.li11")}
               </li>
             </ul>
             <div className="bottom">
@@ -60,10 +55,7 @@ const HowToProced = () => {
                   <ProcedIcon1 />
                 </div>
                 <p>
-                  При намерении участвовать в конкурсе по результатам
-                  общеобразовательных вступительных испытаний для отдельных
-                  категорий, поступающих – документ, подтверждающий
-                  инвалидность.
+                {t("abiturient.proced.li12")}
                 </p>
               </div>
               <div className="bottomLi">
@@ -71,8 +63,7 @@ const HowToProced = () => {
                   <ProcedIcon2 />
                 </div>
                 <p>
-                  Для использования особого права или преимущества документ,
-                  подтверждающий особое право.
+                {t("abiturient.proced.li13")}
                 </p>
               </div>
               <div className="bottomLi">
@@ -80,45 +71,36 @@ const HowToProced = () => {
                   <ProcedIcon3 />
                 </div>
                 <p>
-                  При необходимости создания специальных условий при проведении
-                  вступительных испытаний – документ, подтверждающий
-                  ограниченные возможности здоровья или инвалидность, требующие
-                  создания указанных условий.
+                {t("abiturient.proced.li14")}
                 </p>
               </div>
             </div>
           </div>
           <div className="box">
-            <span className="spanTitle">ШАГ 2</span>
+            <span className="spanTitle">{t("abiturient.proced.spanTitle")} 2</span>
             <p className="title">
-              Подать документы в Приемную комиссию МОСАП (в соответствии со
-              сроками приема на очную, очно-заочную и заочную формы обучения)
-              одним из способов:
+            {t("abiturient.proced.title4")}
             </p>
             <ul>
-              <li>подать лично</li>
-              <li>отправить по электронной почте</li>
-              <li>отправить письмом ФГУП «Почта России»</li>
+              <li>{t("abiturient.proced.li15")}</li>
+              <li>{t("abiturient.proced.li16")}</li>
+              <li>о{t("abiturient.proced.li17")}</li>
             </ul>
           </div>
           <div className="box">
-            <span className="spanTitle">ШАГ 3</span>
+            <span className="spanTitle">{t("abiturient.proced.spanTitle")} 3</span>
             <p className="title">
-              Пройти вступительные испытания, проводимые Академией (при
-              необходимости).{" "}
+            {t("abiturient.proced.title5")}
             </p>
           </div>
           <div className="box">
-            <span className="spanTitle">ШАГ 4</span>
+            <span className="spanTitle">{t("abiturient.proced.spanTitle")} 4</span>
             <p className="title">
-              Заключить договор и произвести оплату для завершения процедуры
-              поступления
+            {t("abiturient.proced.title6")}
             </p>
             <ul>
               <li>
-                Заключение договора и оплата обучения осуществляются в один
-                день. Оплата обучения может производиться как наличным, так и
-                безналичным расчетом (банковские карты).
+              {t("abiturient.proced.li18")}
               </li>
             </ul>
           </div>

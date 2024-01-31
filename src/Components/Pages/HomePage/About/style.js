@@ -21,7 +21,7 @@ const AboutWrapper = styled.div`
       font-size: 20px;
       font-weight: 400;
       line-height: 30px;
-      width: 645px;
+      width: 100%;
       margin: auto;
     }
     .countUp {

@@ -16,7 +16,7 @@ const Academy = () => {
                     <BannerAcademy/>
                     <History/>
                     <Founder/>
-                    <Partner/>
+                    {/* <Partner/> */}
                     <Form/>
                 </div>
             <Footer/>

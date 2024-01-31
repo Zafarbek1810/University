@@ -10,16 +10,18 @@ import Belt from './Belt';
 import News from './News';
 import Footer from '../Footer';
 import NewBanner from './NewBanner';
+import Banner from './Banner';
 
 const HomePage = () => {
     return (
         <HomePageWrapper>
             <Header/>
             <div className="main">
-            <NewBanner/>
+            {/* <NewBanner/> */}
+            <Banner/>
             <Form/>
             <EducationType/>
-            <Program/>
+            {/* <Program/> */}
             <Form/>
             <About/>
             <Partners/>

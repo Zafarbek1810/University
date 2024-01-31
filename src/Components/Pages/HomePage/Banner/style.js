@@ -21,7 +21,6 @@ const BannerWrapper = styled.div`
 
   .title {
     width: 590px;
-    font-family: SF Pro Display;
     font-size: 60px;
     font-style: normal;
     font-weight: 600;
@@ -31,8 +30,7 @@ const BannerWrapper = styled.div`
   }
 
   .description {
-    width: 590px;
-    font-family: SF Pro Display;
+    width: 690px;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -44,7 +42,10 @@ const BannerWrapper = styled.div`
     border: none;
     border-radius: 10px;
     background: #007aff;
+    color: #fff;
+    font-size: 16px;
     padding: 16px 33px;
+    cursor: pointer;
   }
 
   @media (max-width: 1024px) {

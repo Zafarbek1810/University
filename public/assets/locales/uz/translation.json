@@ -1,0 +1,269 @@
+{
+  "header": {
+    "link1": "Bosh sahifa",
+    "link2": "Abiturientlar uchun",
+    "link3": "Xorijiy talabalar uchun ta'lim",
+    "link4": "Ta'lim dasturlari",
+    "link5": "Talabalar uchun",
+    "link6": "Hamkorlar",
+    "link7": "Akademiya haqida",
+    "link8": "Aloqa"
+  },
+
+  "banner": {
+    "title": "YANGI MAQSADLAR TALABLAR SO'HASI",
+    "descr": "Ufim Davlat Universiteti bilan muvaffaqiyatga yo'l oling. Biz innovatsion ta'lim yechimlari taklif etamiz, sizning o'sishingiz va rivojlanishingiz uchun yangi obidalar ochamiz. Kelajagingizni biz bilan qayta o'rganing!",
+    "button": "Batafsil"
+  },
+
+  "form": {
+    "title": "Ariza qoldirib qabul komissiyasidan maslahat oling",
+    "subtitle": "Ariza qoldirib qabul komissiyasidan maslahat oling",
+    "name": "Ism",
+    "button": "Yuboring"
+  },
+
+  "obrazovanie": {
+    "title": "TA'LIM TURLARI",
+    "tab1": "Innovatsion ta'lim",
+    "tab2": "Bola ta'limi",
+    "tab3": "Boshlang'ich ta'lim",
+    "tab4": "Rus tili",
+    "tab5": "Iqtisodiyot",
+    "tab6": "Psixologiya",
+    "tab7": "Jismoniy tarbiya",
+    "tab8": "Tarix",
+    "descr1": "So'nggi texnologiyalar va zamonaviy o'qitish usullarining dunyosiga kirish uchun qapilarni oching. Bizning innovatsion ta'lim dasturlarimiz kreativlik, kritik fikrlash va kelajakning talablari uchun tayyorlashga qaratilgan. Sizga texnologiyalar tezroq rivojlanayotgan asrda muvaffaqiyatli karyeraning kaliti bo'lgan ko'nikmalar bilan ta'minlaydigan ko'nikmalar olib keladi.",
+    "descr2": "Kichik tadqiqotchilar uchun maxsus o'qitish dunyosiga o'ting. Bizning bolalik ta'lim dasturlarimiz har bir bolaning potentsialini ochishi mumkin bo'lgan individual va qo'llab-quvvatlovchi muhitda kritik ahamiyatga ega bo'lgan ko'nikishni rivojlanishga qaratilgan.",
+    "descr3": "Sizning bolangizning kelajagi uchun qattiq asos yarating. Biz o'quvchilarni keyingi ta'lim bosqichiga muvaffaqiyatli o'tishga tayyorlashda tajriba aylanadi, ular o'rganish, ijtimoiy salomatlik va tajribani rivojlantirishga imkoniyat yaratish orqali o'rganadilar.",
+    "descr4": "Bizning kurslarimiz bilan rus tilining boy bog'ini oling. Sifatli o'qituvchilar sizga muvaffaqiyatli muloqot, yozish va o'qish uchun kerakli til ko'nikmalarini o'rganishga yordam berishadi. Til o'qitishni va muloqot madaniyatini rivojlantiring.",
+    "descr5": "Bizning ta'lim dasturlarimiz bilan iqtisodiyotning dunyosiga tushishing. Asosiy iqtisodiy prinsiplar, bozor tahlili va resurslarni boshqarish haqida bilimlarni oling. Iqtisodiyot va biznes sohasida yuqori to'lovlilarga tayyorlang.",
+    "descr6": "Inson munosabatlarini o'rganing va psixologik tahlil ko'nikmalarini rivojlantiring. Bizning psixologiya kurslarimiz sizga o'zingizni va qarindoshlarini tushunishingizga, empatiya ko'nikmalaringizni rivojlantirishga va kasbiy va shaxsiy hayotingizda qo'llab-quvvatlashgan muhit yaratishga yordam beradi.",
+    "descr7": "Sog'liq va faol hayot uslubiga yo'l qo'ying, bizning jismoniy tarbiya dasturlarimiz orqali. Jismoniy qavriq, koordinatsiya va jamoatchilik ko'nikmalarini rivojlantirib, sog'likli hayot uslubi uchun asos yarating.",
+    "descr8": "Ko'p yillik tarixni o'rganing va o'tgan yillarning sirrlarini oching, bizning kurslarimiz bilan. Asosiy voqealar, shaxslar va madaniy trendlar haqida tadqiqot qiling, tarixni va uning jamiyatga o'z ta'sirini kengaytiring."
+  },
+
+  "obakademiy": {
+    "title": "AKADEMIYA HAQIDA",
+    "descr": "Ufim Davlat Universiteti Akademiyasi — bu kengaytirilgan ta'lim tajribasi, innovatsiyalar va ilm madaniyati amalga oshirishning ifodasi. Biz shaxsiylik sifatida rivojlanish, chuqurlashtirilgan bilimlarni olish va zamonaviy jahonning talablari uchun tayyorlanish imkoniyatlarini yaratishga qaratilgan maxsus ta'lim mehnati yaratishni maqsad qilamiz.",
+    "counter1": "Yo'nalishlar soni",
+    "counter2": "Talabalar soni",
+    "counter3": "Hamkorlar soni",
+    "card_title1": "Xalqaro ta'lim standartlari",
+    "card_title2": "Ta'lim va ish faoliyatini birlashtirish imkoniyati",
+    "card_title3": "Amaliy yo'naltirish",
+    "card_title4": "To'lov shakli",
+    "card_title5": "Davlat diplom",
+    "card_title6": "Qulay ta'lim shakli",
+    "card_descr1": "Ufim Davlat Universiteti Akademiyasi yuqori xalqaro ta'lim standartlariga mos kelishga harakat qiladi. Bizning o'quv dasturlarimiz jahon ta'lim jamoasi talablari asosida ishlab chiqiladi, dunyoviy miqyosdagi sifatli ta'limni ta'minlaydi.",
+    "card_descr2": "Biz ta'limni kasb-hunar faoliyat bilan birlashtirishning muhimligini tushunamiz. Shuning uchun biz talabalar uchun ta'limni ish bilan muvaffaqiyatli joriy etish imkoniyatlarini taklif etamiz. Bu kasb-hunar va shaxsiy rivojlanish uchun maxsus imkoniyatlar yaratadi.",
+    "card_descr3": "Bizning ta'lim dasturlarimiz amaliy yo'nalishga ega. Talabalar teorik asoslar bilan birga, karyeraga muvaffaqiyatli bo'lish uchun zarur amaliy ko'nikmalarni olishadi. Biz katta korxona va tashkilotlar bilan hamkorlik qilamiz, talabalarga amaliy ish tajribasini ta'minlash uchun.",
+    "card_descr4": "Biz har bir talabaning o'zining maxsus moliyaviy imkoniyatlari borligini tushunamiz. Shuning uchun, ta'lim to'lovi shakllarini, chegirmalar va bursa dasturlarini o'z ichiga olgan moliyaviy qo'llab-quvvat shaklari taklif etamiz. Bu ta'limni murakkab talabalik guruhlari uchun qulay qiladi.",
+    "card_descr5": "Ufim Davlat Universiteti Akademiyasida ta'limni tugatgandan so'ng, talabalar baland qiymatli davlat diplomini olishadi. Bu o'quv dasturini muvaffaqiyatli tugatishning tasdiqini beradi, u mamlakat ichida va tashqi hududda tan olinadi.",
+    "card_descr6": "Biz talabalar uchun qulay ta'lim shakllari taklif etamiz, onlayn kurslar, kechki va dam olish vaqtida darslar, bu talabalarga maksimal qulaylik ta'minlaydi. Bu ta'lim jarayonini shaxsiy talablarga va jadvalga moslashtirishga imkon beradi, ta'limni har bir uchun mukammal qiladi."
+  },
+
+  "partners": {
+    "title": "HAMKORLARIMIZ"
+  },
+
+  "belt": {
+    "text1": "Bizning ko'rsatgan darslarga mashhur rus va xalqaro tadbirkorlar",
+    "text2": "va davlat hodimlari ham qatnashishdi"
+  },
+
+  "news": {
+    "title": "YANGILIKLAR"
+  },
+
+  "abiturient": {
+    "banner": {
+      "title": "Bu bo'limda abiturientlar uchun barcha aktual ma'lumotlarni to'pladik.",
+      "descr": "Agar savollaringiz bo'lsa, qabul komissiyasi xodimlari har doim yordam berishga tayyorlar!"
+    },
+
+    "proced": {
+      "h3title": "QANDAY QABUL QILISH",
+      "spanTitle": "QADAM",
+      "title1": "Kerakli hujjatlarni tayyorlash:",
+      "title2": "Elektron pochta yoki Rossiya Pochtasiga taqdim etish uchun qo'shimcha hujjatlari*:",
+      "title3": "Xorijiy fuqarolar uchun qo'shimcha hujjatlar:",
+      "title4": "Hujjatlarni MOSSAP Qabul komissiyasiga (yuzaki, yuzaki-yozuvli va yozuvli shakllarda o'qishga qabul qilish muddatlariga mos) bir qator usullar bilan topshirish:",
+      "title5": "Akademiya tomonidan o'tkaziladigan qabul sinovlaridan o'tish (kerak bo'lsa).",
+      "title6": "Shartnoma tuzib, qabul jarayonini yakunlash uchun to'lovni amalga oshirish",
+      "li1": "Shaxsiy huquqni tasdiqlovchi hujjat (pasport)",
+      "li2": "Ta'lim haqida hujjat (attestat, diplom)",
+      "li3": "To'lov qiluvchi pasporti yoki kopiyasi, shartnoma ota-onasidan biriga tuzilgan bo'lsa",
+      "li4": "2 ta 3x4 fotosurat, familiya o'zgartirish hujjatining nusxasi (bor bo'lsa)",
+      "li5": "Akademiya bakalavr yoki o'rta ma'lumot darajalariga o'qish uchun ariza (biror bir qattiq ta'qiqda to'rtburchak shaklida chiqarilgan)",
+      "li6": "MOSSAP shaxsiy ma'lumotlarini qayta ishlashga rozilik",
+      "li7": "Qabulga rozilik berish haqida ariza",
+      "li8": "* Elektron pochta yoki Rossiya Poçtasiga taqdim etish uchun faqat ariza namunalari. Hujjatlarni shaxsiy ravishda qabul komissiyasiga topshirgan shaxslar oldindan arizalarni to'ldirmaydi.",
+      "li9": "Barcha hujjatlarni rus tiliga tarjima qilish",
+      "li10": "Vaqtinchalik ro'yxatdan o'tkazish yoki nusxa",
+      "li11": "Hujjatni nostrifikatsiya qilish (kerak bo'lsa), Bosh Ekspert markaz tomonidan berilgan taqriz",
+      "li12": "Ba'zi kategoriyalardagi abiturientlar uchun umumiy sinovlar natijalariga qatnashishni niyat qilgan holda – invalidlikni tasdiqlovchi hujjat.",
+      "li13": "Maxsus huquq yoki afzallikdan foydalanish uchun hujjat.",
+      "li14": "Maxsus shartlarni tuzish zarurati bo'lgan umumiy sinovlarni o'tkazishda – shaxsiy sog'lik chegaralari yoki invalidlikka oid shartnoma.",
+      "li15": "Shaxsiy ravishda topshirish",
+      "li16": "Elektron pochta orqali yuborish",
+      "li17": "Rossiya Poçtasiga xat yuborish",
+      "li18": "Shartnoma tuzish va ta'lim to'lovi bir kunda amalga oshiriladi. Ta'lim to'lovi naqd yoki naqd olma rasmi bilan amalga oshirilishi mumkin (bank kartalari)."
+    },
+
+    "dormitory": {
+      "title": "YOTOQXONA",
+      "descr": "Bizning talabalarimiz uchun qulay va jihozlangan xonalar taqdim etiladi.",
+      "li1": "Faqat talabalar uchun joylashuv",
+      "li2": "Qulay joylashuvi",
+      "li3": "Xorijiy fuqarolar ro'yxati",
+      "li4": "Territoriya 24/7 himoyalangan",
+      "li5": "Sport zal",
+      "li6": "Stolovaya",
+      "swiperText": "2 va 3 xonali joylashuv"
+    }
+  },
+
+  "student": {
+    "studentam": {
+      "tab1": "TALABALAR UCHUN",
+      "descr": "O'qish va talabalik hayoti haqida kerakli barcha ma'lumotlar Akademiya",
+      "cardTitle1": "Aziz talaba! Siz tanlagan uchun rahmat! Sizga talabalik yillari hayotingizning unutilmaz va eng ajayib davri bo'lishini ishonamiz.",
+      "cardDescr1": "Siz bizning ko'pgina ukamizga qo'shildingiz. Bizning Akademiya bilan iftixor qilamiz, uning sharofi va sharafi bilan bahramandmiz va Akademiyaning yaxshiligi uchun kurashganligimizni qo'llashingizni umid qilamiz. Yodda tutingizki, siz yolg'iz emassiz, o'qituvchilar, do'stlar, kollegialar sizning doimiy yordamingizda. Muvaffaqiyatlar tilaymiz va Akademiyaning shon-shohratining sizning professional muvaffaqiyatlariz bilan ko'proqlashmasini umid qilamiz.",
+      "cardTitle2": "Bu kerakli",
+      "cardTitle3": "Bizda shunday qabul qilinadi",
+      "liTitle1": "Dekanat",
+      "liText1": "Talaba ma'lumotlari, akademik qarzlarning, o'qituvchini qanday topish, dars jadvali va guruh raqamini aniqlash va boshqa masalalar haqida so'rovlarga javob olish uchun Akademiya bo'limi. Dekanat xodimlari har qanday savolingizga javob berishga tayyor va yordam berish uchun tayyorlar.",
+      "liTitle2": "Auditoriya",
+      "liText2": "Dars o'tkazish uchun mo'ljallangan joy.",
+      "liTitle3": "O'qituvchi",
+      "liText3": "Talabalarni o'qitish bilan shug'ullanadigan Akademiya xodimi. Vuzda 'o'qituvchi' deyish mumkin emas.",
+      "liTitle4": "Kurator",
+      "liText4": "Bu, Akademiyaning rektori buyrug'iga muvofiqlashtirilgan, birinchi kursning ochiq shakli talabalari yo'lida sa'y o'tkazish uchun ajratilgan javobgar xodimdir. Amaliyda, ushbu o'qituvchi dekanlikka yordam beradi va 'sinf rahbari' vazifalarini bajaradi. Kattalar kurslarda, bu vazifalar to'liq fakultet dekaniga o'tkaziladi.",
+      "liTitle5": "Starosta",
+      "liText5": "Dekanat tomonidan guruh talabasi nomlangan va guruhning dekanat bilan bog'lanishini ta'minlaydigan vakil.",
+      "liTitle6": "Dars",
+      "liText6": "O'qituvchi nazariy materialni izlovchi ta'lim usuli.",
+      "liTitle7": "Seminar",
+      "liText7": "O'quvchilar amaliy ishni o'zlashtirishni ko'rsatadigan ta'lim usuli, o'quvchilar o'zgarib, o'zlariga berilgan savollarga javob berishlari mumkin.",
+      "liTitle8": "Semestr",
+      "liText8": "Ta'lim yili ikki yarim ta'limga bo'linadi, har birida 18 hafta mavjud.",
+      "liTitle9": "Sessiya",
+      "liText9": "Talabalar o'tgan yarmi semezni topshirish va imtihonlar uchun o'quv tadbiri.",
+      "liTitle10": "Ta'lim dissiplinasi",
+      "liText10": "O'quv kursi, darslik va o'quv rejasi boyicha talabalarni tayyorlash uchun muvofiqlashgan dars va o'quv rejasi. Bu bilimlar to'plami. Bu shuningdek, vuzda ushbu termin ishlatiladigan maqola mavjud emas.",
+      "liTitle11": "Kirish tizimi",
+      "liText11": "Akademiya tartibini saqlash maqsadida, kirish tizimi amalga oshiriladi. Har bir kiruvchi hujjatlarni ko'rsatishi lozim. Sizning Akademiya kirishingiz elektron talaba kartiniz bilan amalga oshiriladi.",
+      "liTitle12": "Kiyim-kechak",
+      "liText12": "Akademiya kiyim-kechakka mos ravishda talablari mavjud. Muzlar binoga kirgach, muzlarni olib tashlash lozim. Ustki kiyimni garderobga topshirish tavsiya etiladi - Akademiya ichki joylarga istalgan ustki kiyimda kirish mumkin emas. Talabalar darsga to'g'ri kiyinib kelsalar, soch, ko'nikmalar, boshqa kiyimlar bilan, ishlab chiqilgan xususiyati ta'qdim etilgan. Akademiya ichida short, ochiq maikalar, mini-yubkalar, shlepki kiritilganligi, qo'lda tutilmaydi va h.k.",
+      "liTitle13": "Sog'liqni saqlash",
+      "liText13": "Narkotik vositalarni ichish va tarqatish Akademiya hududida o'tish kuchaytiradi. Alkogolli ichimliklarni ichish, pivo hamda alkogolli ichimliklarni ichish va alkogol ustida bo'lish taqiqlanadi va bunday voqelerik qaror qilinadi."
+    },
+
+    "login": {
+      "tab5": "TALABANING SHAXSIY HISOBI",
+      "title": "KIRISH",
+      "log": "Login",
+      "logReq": "Loginni kiriting",
+      "pass": "Parol",
+      "passReq": "Parolni kiriting",
+      "btn": "Kirish"
+    },
+
+    "studsovet": {
+      "tab2": "TALABA KENGASHI",
+      "title": "Akademiyaning o'quvchilarining ta'lim jarayonini boshqarishda o'quvchilar huquqlarini amalga oshirish uchun tashkil etilgan boshqaruv shakli",
+      "subtitle": "Bizning maqsadlarimiz - o'quvchilarni jamiyat hayotida ixtisoslashtirilgan va javobgar ishtirok etishga tayyorlash. Fuqarolik madaniyati, o'quvchilarning faol fuqarolik pozitsiyasini, ularning ijtimoiy yetukliklarini, mustaqillik, o'zini tartibga solish va o'zini rivojlantirish qobiliyatini shakllantirish; O'quvchilarning universitet boshqaruvida ishtirok etish huquqlarini amalga oshirish, ta'lim jarayoni sifatini baholash;",
+      "cardTitle": "Talaba kengashining vazifalari:",
+      "cardText": "O'quvchilarni yuqori malakali mutaxassislar tayyorlash bilan bog'liq barcha savollarni hal qilishga jalb qilish; O'quvchilar huquqlarini himoya qilish va ularning qiziqishlarini himoya qilish; Universitet boshqaruv organlariga talaba turar joyi va taomlarni tashkil etishda, sog'liqni saqlash propagandasida o'quvchilarga yordam berish; Ta'lim jarayonida amalga oshiriladigan tadbirlarda tarkibiy bo'limlarga yordam berish; O'quvchilarga universitet faoliyatini xabar qilish; O'quvchilar yoshlarining jamiyatda amalga oshiriladigan haqiqiy kuch va rus jamiyati rivojlanishining strategik resursi haqida umumiy fikrlarini shakllantirishda ishtirok etish;"
+    },
+
+    "library": {
+      "tab3": "ELEKTRON KUTUBXONA",
+      "subtitle": "Elektron kutubxona tizimlari va ilmiy kutubxonaning resurslari:",
+      "cardTitle": "BOOK.RU Elektron kutubxona tizimlari va ilmiy kutubxonaning resurslari:",
+      "cardText": "BOOK.RU — ta'lim muassasalari uchun elektron kutubxona tizimi. Turli ilm fanlari bo'yicha darsliklar, o'quv qo'llanmalari, ilmiy asarlar, monografiyalarning elektron variantlarini o'z ichiga oladi. Bugungi kunda EBT BOOK.RU 15 000 dan ortiq nashrni o'z ichiga oladi."
+    },
+
+    "employment": {
+      "tab4": "ISHGA JOYLASHTIRISH",
+      "title": "Ish joylashtirish markazi - ish izlaydiganlar va ish beruvchilar orasidagi bog'lanish nuqtasi.",
+      "subtitle": "Bizning missiyamiz - yosh mutaxassislar - MosAPlar talabalari va bitiruvchilarni ishga joylashish, ularning karyera o'sishiga va professional rivojlanishiga yordam berish. Bizning ustuvor vazifalarimiz guruhida talabalar va qabul qiluvchilarni ma'lumot va maslahatlar bilan qo'llab-quvvatlash va rekruting tadbirlarini tashkil etish kiritilgan.",
+      "cardTitle": "Talaba kengashining vazifalari:",
+      "cardText": "O'quvchilarni yuqori malakali mutaxassislar tayyorlash bilan bog'liq barcha savollarni hal qilishga jalb qilish; O'quvchilar huquqlarini himoya qilish va ularning qiziqishlarini himoya qilish; Universitet boshqaruv organlariga talaba turar joyi va taomlarni tashkil etishda, sog'liqni saqlash propagandasida o'quvchilarga yordam berish; Ta'lim jarayonida amalga oshiriladigan tadbirlarda tarkibiy bo'limlarga yordam berish; O'quvchilarga universitet faoliyatini xabar qilish; O'quvchilar yoshlarining jamiyatda amalga oshiriladigan haqiqiy kuch va rus jamiyati rivojlanishining strategik resursi haqida umumiy fikrlarini shakllantirishda ishtirok etish;"
+    }
+  },
+
+  "partnerPage": {
+    "banner": {
+      "title": "HAMKORLIKLAR ISH BERGANLAR BILAN HAMKORLIK",
+      "li1": "Sizning talablaringizga javob beradigan malakali mutaxassislarni tanlashda yordam berish",
+      "li2": "Talabalarni davriy, mavsumiy va moslashuvchan ishlarga tanlashda yordam berish",
+      "li3": "Talabalarni amaliyotga, stajirovkaga yuborish va doimiy ishlashga eng tayyorlarini tanlash imkoniyati",
+      "li4": "Akademiyaning ikkita o'quv binosida talabalar bilan uchrashuvlar tashkil etish va kompaniyangiz taqdimotini o'tkazish",
+      "li5": "O'z kompaniyangiz va mavjud bo'sh ish o'rinlari haqidagi ma'lumotlarni Akademiyaning stendlari, veb-sayti va ijtimoiy tarmoqlarida joylashtirish",
+      "li6": "O'z kompaniyangiz va mavjud bo'sh ish o'rinlari haqidagi ma'lumotlarni Akademiyaning stendlari, veb-sayti va ijtimoiy tarmoqlarida joylashtirish"
+    },
+
+    "agent": {
+      "title": "AGENTLAR BILAN HAMKORLIK",
+      "matn": "Moskva tadbirkorlik akademiyasi agentlik shartnomasi shartlariga ko'ra HE, SVE, DPO, oliy o'quv yurtidan keyingi ta'lim dasturlariga kirish uchun hamkorlikning qulay shartlarini taklif qiladi. Shartlar yakka tartibda muhokama qilinadi. Agentlik to'lovlari narxining 50% gacha. Dasturlar. Shartlar individual ravishda muhokama qilinadi. Dasturlar narxining 50% gacha agentlik toʻlovlari. Shartlar yakka tartibda muhokama qilinadi. Dasturlar narxining 50% gacha agentlik toʻlovlari.",
+      "liTitle": "Bizning afzalliklarimiz",
+      "li1": "U va SVE akkreditatsiyasi 6 yilga (HE 2020 yil fevralidan, DPO - 2020 yil iyunidan)",
+      "li2": "Oyiga ikki marta talabalarni masofaviy ta'limga qabul qilish",
+      "li3": "Talabalarni ko'chirish sertifikatlari va barcha kerakli hujjatlarni 3 ish kuni ichida berish",
+      "li4": "Kursni yo'qotmasdan ko'chirish talabalarini ro'yxatga olish",
+      "li5": "O'qitishning moslashuvchan yo'nalishlari",
+      "li6": "Mintaqaviy hamkorlar uchun EPC",
+      "li7": "Tayinlangan shaxsiy menejer-kurator",
+      "li8": "Hamkorlarga oylik to'lovlar",
+      "li9": "Hamkorlarga oylik to'lovlar"
+    },
+
+    "vuzi": {
+      "title": "Hamkor universitetlar"
+    },
+
+    "form": {
+      "title": "Hamkorlik so'rovini yuborish",
+      "subtitle": "Tugmani bosish orqali siz Maxfiylik siyosatiga va axborot byulletenlarini olishga rozilik bildirasiz",
+      "name": "Ism",
+      "company": "Kompaniya nomi va lavozimi",
+      "city": "Shahar",
+      "site": "Kompaniya veb-sayti",
+      "suggestion": "Sizning taklifingiz",
+      "btn": "Yuborish"
+    }
+  },
+
+  "about": {
+    "bannerTitle": "AKADEMIYA HAQIDA",
+    "bannerSubtitle": "Yuqori sifatli kadrlarni zamonaviy iqtisodiy va ijtimoiy sharoitlarda samarali ishlashga tayyorlaymiz",
+    "historyTitle": "AKADEMIYA TARIXI",
+    "historySubtitle": "Maxsus oliy ta'lim muassasasi “Moskva Suv Ommalari Akademiyasi” 1997-yilda tashkil etilgan.",
+    "historyText": "25 yil davomida Akademiya yangi avlod oliy ta'lim muassasalari ichida talab qilinadigan institutlaridan biri bo'ldi, tadbirkorlar, davlat xizmatchilari va tashkilot boshqaruvchilarini tayyorlashga oid yangi talablarni aniqladi. O'z rivojlanish yillarida Akademiya katta ilmiy potentsialni yig'ib oldi. Biz mutaxassislar tayyorlash sifatini boshqarish tizimini yaratdik, bu tizimga tashkil etish tizimlari, metodikalar, jarayonlar va material resurslar kiritildi.",
+    "liTitle": "Akademiya tomonidan amalga oshirilayotgan o'qitish tizimi o'qituvchilarini davlat va xususiy tashkilotlarning amaliy faoliyatiga tez kiritishni ta'minlaydi",
+    "liSubtitle": "Akademiya bitiruvchilari biznes yaratish bo'yicha fundamental ma'lumot va amaliy ko'nikmalarga ega bo'lyapti. Talabalarga ko'p bosqichli biznes ta'limi, intellektual potentsialni rivojlantirish, professional etikaga ega bo'lish, ijobiy muloqot ko'nikmalarini, personal boshqarish ko'nikmalarini o'rganish imkoniyati beriladi. Ularga o'z biznesini ochish uchun yaxshi asos beriladi.",
+    "li1": "Akademiya o'z bitiruvchilarini davlat va xususiy tashkilotlarning amaliy faoliyatiga tez kirishini ta'minlaydigan o'qitish tizimini amalga oshiradi.",
+    "li2": "Talabalarga tibbiy xizmat ko'rsatish, yuqori sifatli ovqatlanish, kerakli o'quv nashrlari va metodik materiallarga kirish kabi to'la paket xizmatlar taqdim etiladi.",
+    "li3": "Akademiya o'z bitiruvchilarini davlat va xususiy tashkilotlarning amaliy faoliyatiga tez kirishini ta'minlovchi samarali o'qitish tizimini taklif etadi.",
+    "li4": "Talabalarga tibbiy xizmat ko'rsatish, yuqori sifatli ovqatlanish, o'quv nashrlari va metodik materiallarga kirish, bu ularni davlat va tijorat sohalarida amaliy faoliyatga muvaffaqiyatli moslashishiga yordam beradi.",
+    "founderTitle": "ASOSCHI",
+    "founderSubtitle": "Malishkov Vladimir Ivanovich — 1997–2010 — Rossiya iqtisodiy universiteti nomli G.V. Plekhanovni boshqarish ekonomika va boshqaruv sohasidagi kafedrasi mudiri.",
+    "founderText": "Bozor iqtisodiyoti sharoitlarida har bir tadbirkor o'z individual xususiyatlari bilan eng yaxshi foydalanish imkoniga ega. Mamlakat uchun — iqtisodiy va ijtimoiy sharoitlarning o'zgarishlari, tadbirkorlikning o'zgaruvchiligi va xususiyatlari, uning ideologiyasi va vazifalarini o'zida aks ettirish, uni ishlab chiqaruvchi sfiradan mijozga olib, — eng muhim vazifa yuqori sifatli mutaxassislar tayyorlashdir. Akademiya Rossiya tadbirkorlik traditsiyalarini davom ettiradi. Biz faol hayot doirasiga ega bo'lgan yigitlarni va qizlarni tayyorlaymiz, ularning professional darajasi hozirgi davrda Rossiyada jamiyat talablari bilan mos kelishi kerak."
+  },
+
+  "contacts":{
+    "title":"AKADEMIYA BILAN BOG'LANISH",
+    "subtitle":"125319, Moskva, Aeroport metro stansiyasi, Planetny ko'chasi, 36",
+    "descr":"Metro stansiyasi «Aeroport»dan chiqib, tarkibiy to'g'ri yo'nalishga burilishingiz va uzun qadam bilan ko'chaga chiqishingiz kerak. Ko'chada yurishning yakunida siz TC «Galereya Aeroport»ga duch kelsiz. Uni o'tib, to'g'ri yo'nalishda yurishni davom ettiring va Chernyakhovskiy ko'chasi bo'yicha yurishni davom ettiring. 500 metrgacha yetganda, Planetny ko'chasining kesishmasiga yetasiz — shu joyda yana bir marta to'g'ri burilishingiz kerak. 200 metrgacha yurishni davom ettirib, chap tomoningizda besh qavatli binoni ko'rasiz — bu Moskva Suv Ommalari Akademiyasi.",
+    "number":"TALABALAR VA ABITURIYENTLAR UCHUN NOMERLARIMIZ",
+    "email":"AKADEMIYA EMAILI",
+    "pochta":"SHIKOYATLAR VA TAKLIFLAR UCHUN"
+  },
+
+  "footer":{
+    "about":"Biz haqimizda",
+    "aloqa":"Biz bilan bog'lanish"
+    }
+}

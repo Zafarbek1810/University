@@ -2,22 +2,24 @@ import React from "react";
 import BannerAcademyWrapper from "./style";
 import Container from "../../../Common/Container";
 import Tab6Icon from "../../../Common/Svgs/Tab6Icon";
+import { useTranslation } from "react-i18next";
 
 const BannerAcademy = () => {
+  const {t} = useTranslation();
+
   return (
     <BannerAcademyWrapper>
       <Container>
         <div className="wrapper">
           <div className="left">
-            <h3 className="title">ОБ АКАДЕМИИ</h3>
+            <h3 className="title">{t("about.bannerTitle")}</h3>
             <div className="bottom">
             <div className="svgs">
               <Tab6Icon />
               <Tab6Icon />
             </div>
             <p className="descr">
-              Подготавливаем высококвалифицированные кадры к эффективной работе
-              в современных экономических и социальных условиях
+            {t("about.bannerSubtitle")}
             </p>
             </div>
           </div>

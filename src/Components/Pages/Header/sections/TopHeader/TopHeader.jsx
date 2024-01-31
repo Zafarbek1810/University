@@ -4,19 +4,19 @@ import MyLink from "../../../../Common/MyLink";
 import ClockSvg from "../../../../Common/Svgs/ClockSvg";
 import PhoneSvg from "../../../../Common/Svgs/PhoneSvg";
 import { Select } from "antd";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"
 import { HeaderContext } from "../../../../../Context/HeaderContext";
+import i18next from "i18next";
 
 const TopHeader = () => {
   const { t, i18n } = useTranslation();
-  const defaultLang = i18n.language;
+  const defaultLang = i18next.language;
   const { setBurger } = useContext(HeaderContext);
 
-  console.log({useTranslation});
 
   const handleChange = (e) => {
     localStorage.setItem("siteLang", e);
-    // i18n.changeLanguage(e);
+    i18n.changeLanguage(e)
   };
 
 
@@ -31,16 +31,22 @@ const TopHeader = () => {
             <ClockSvg />
             09:00 - 18:00
           </span>
-          <a href="tel:998999999999">
+          <a href="tel:998914350010">
             <PhoneSvg />
-            +99 871-140-11-48
+            +998 91-435-00-10
+
+          </a>
+          <a href="tel:998914360010">
+            <PhoneSvg />
+            +998 91-436-00-10
+
           </a>
           <div className="lang">
             <Select
-              placeholder="UZ"
+              placeholder="RU"
               id="lang"
               value={defaultLang}
-              getPopupContainer={(trigger) => trigger.parentElement}
+              // getPopupContainer={(trigger) => trigger.parentElement}
               style={{
                 width: 80,
               }}
@@ -59,10 +65,6 @@ const TopHeader = () => {
               }
               options={[
                 {
-                  value: "en",
-                  label: "ENG",
-                },
-                {
                   value: "uz",
                   label: "UZB",
                 },
@@ -73,7 +75,7 @@ const TopHeader = () => {
               ]}
             />
           </div>
-          <button className="myBtn">Заявка на обучение</button>
+          <MyLink to='/login' className="myBtn">Kirish</MyLink>
         </div>
       </div>
     </TopHeaderWrapper>

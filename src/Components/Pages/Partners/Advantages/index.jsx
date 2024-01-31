@@ -1,51 +1,56 @@
 import React from "react";
 import AdvantagesWrapper from "./style";
 import Container from "../../../Common/Container";
+import { useTranslation } from "react-i18next";
 
-const cardData = [
-  {
-    id: 1,
-    text: "Аккредитация ВО и СПО на 6 лет (ВО с февраля 2020, СПО – с июня 2020)",
-  },
-  {
-    id: 2,
-    text: "Зачисление студентов на дистанционное обучение два раза в месяц",
-  },
-  {
-    id: 3,
-    text: "Выдача справки о студентах-переводниках и всех необходимых документов до 3-х рабочих дней",
-  },
-  {
-    id: 4,
-    text: "Зачисление студентов-переводников без потери курса",
-  },
-  {
-    id: 5,
-    text: "Адаптивные направления подготовки",
-  },
-  {
-    id: 6,
-    text: "ЭПК для региональных партнеров",
-  },
-  {
-    id: 7,
-    text: "Закрепленный личный менеджер-куратор",
-  },
-  {
-    id: 8,
-    text: "Ежемесячные выплаты вознаграждения партнерам",
-  },
-  {
-    id: 9,
-    text: "Ежемесячные выплаты вознаграждения партнерам",
-  },
-];
+
 
 const Advantages = () => {
+  const {t} = useTranslation();
+
+  const cardData = [
+    {
+      id: 1,
+      text: t("partnerPage.agent.li1"),
+    },
+    {
+      id: 2,
+      text: t("partnerPage.agent.li2")
+    },
+    {
+      id: 3,
+      text: t("partnerPage.agent.li3")
+    },
+    {
+      id: 4,
+      text: t("partnerPage.agent.li4")
+    },
+    {
+      id: 5,
+      text: t("partnerPage.agent.li5")
+    },
+    {
+      id: 6,
+      text: t("partnerPage.agent.li6")
+    },
+    {
+      id: 7,
+      text: t("partnerPage.agent.li7")
+    },
+    {
+      id: 8,
+      text: t("partnerPage.agent.li8")
+    },
+    // {
+    //   id: 9,
+    //   text: t("partnerPage.agent.liTitle")
+    // },
+  ];
+
   return (
     <AdvantagesWrapper>
       <Container>
-        <h3 className="title">Наши преимущества</h3>
+        <h3 className="title">{t("partnerPage.agent.liTitle")}</h3>
         <div className="cards">
           {cardData.map((item) => (
             <div key={item.id} className="item">

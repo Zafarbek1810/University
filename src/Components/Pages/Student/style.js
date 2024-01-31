@@ -15,7 +15,7 @@ const StudentWrapper = styled.div`
     gap: 40px;
 
     .tabs {
-      width: 23%;
+      width: 30%;
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -63,7 +63,7 @@ const StudentWrapper = styled.div`
     }
 
     .component {
-      width: 77%;
+      width: 70%;
     }
   }
   .btn{

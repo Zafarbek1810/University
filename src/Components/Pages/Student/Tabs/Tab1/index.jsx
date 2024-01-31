@@ -1,51 +1,34 @@
 import React from "react";
 import { AccordionWrapper, Tab1Wrapper } from "./style";
 import { Collapse } from "antd";
+import { useTranslation } from "react-i18next";
 const { Panel } = Collapse;
 
-const data = [
-  {
-    id: 1,
-    title: "Это нужно знать",
-    text: "dd",
-  },
-  {
-    id: 2,
-    title: "collapse.question2",
-    text: "collapse.answer2",
-  },
-];
 
 const Tab1 = () => {
+  const {t} = useTranslation()
   return (
     <Tab1Wrapper>
-      <h3 className="title">СТУДЕНТАМ</h3>
+      <h3 className="title">{t("student.studentam.tab1")}</h3>
       <p className="descr">
-        Вся необходимая информация об учебе и студенческой жизни в Академии
+      {t("student.studentam.descr")}
       </p>
 
       <div className="box">
         <p className="text1">
-          Дорогой студент! Мы благодарим тебя за сделанный выбор и искренне
-          желаем, чтобы студенческие годы стали для тебя незабываемым и самым
-          удивительным периодом в жизни.
+        {t("student.studentam.cardTitle1")}
         </p>
         <p className="text2">
-          Ты присоединился к нашему многочисленному братству.Мы все гордимся
-          Академией, дорожим ее честью и ее репутациейи рассчитываем на то, что
-          ты поддержишь наше стремление сделать Академию лучше. Помни, что ты не
-          один, что рядом с тобой твои преподаватели, друзья, коллеги, которые
-          всегда готовы помочь. Искренне желаем успехов и надеюсь, что слава
-          Академии приумножится и твоими профессиональными успехами.
+        {t("student.studentam.cardDescr1")}
         </p>
       </div>
 
       <div className="accordions">
         <Collapse accordion bordered={false} defaultActiveKey={1}>
-          <Panel header="Это нужно знать">
+          <Panel header={t("student.studentam.cardTitle2")}>
             <Accordion1 />
           </Panel>
-          <Panel header="У нас так принято">
+          <Panel header={t("student.studentam.cardTitle3")}>
             <Accordion2 />
           </Panel>
         </Collapse>
@@ -55,98 +38,67 @@ const Tab1 = () => {
 };
 
 const Accordion1 = () => {
+  const {t} = useTranslation()
   return (
     <AccordionWrapper className="text1">
-      <li className="title">Деканат</li>
+      <li className="title">{t("student.studentam.liTitle1")}</li>
       <p className="descr">
-        Подразделение Академии, в которое студент может обратиться за справкой,
-        узнать академическую задолженность, как найти того или иного
-        преподавателя, уточнить расписание и номер своей группы и т.п.
-        Сотрудники деканата всегда готовы ответить на любой Ваш вопрос и помочь
-        Вам.
+      {t("student.studentam.liText1")}
       </p>
-      <li className="title">Аудитория</li>
+      <li className="title">{t("student.studentam.liTitle2")}</li>
       <p className="descr">
-        Помещение, предназначенное для проведения занятий.
+      {t("student.studentam.liText2")}
       </p>
-      <li className="title">Преподаватель</li>
+      <li className="title">{t("student.studentam.liTitle3")}</li>
       <p className="descr">
-        Сотрудник Академии, осуществляющий обучение студентов. В вузе не принято
-        употребление термина «учитель» по отношению к преподавателю.
+      {t("student.studentam.liText3")}
       </p>
-      <li className="title">Куратор</li>
+      <li className="title">{t("student.studentam.liTitle4")}</li>
       <p className="descr">
-        Это ответственный сотрудник из числа преподавателей, назначенный
-        приказом ректора Академии для сопровождения студентов первого курса
-        очной формы. По сути, данный преподаватель помогает декану и выполняет
-        функции «классного руководителя». На старших курсах эти функции
-        полностью передаются Декану факультета.
+      {t("student.studentam.liText4")}
       </p>
-      <li className="title">Староста</li>
+      <li className="title">{t("student.studentam.liTitle5")}</li>
       <p className="descr">
-        Назначенный деканатом студент группы, являющийся представителем группы в
-        деканате и обеспечивающий связь деканата со студентами группы.
+      {t("student.studentam.liText5")}
       </p>
-      <li className="title">Лекция</li>
+      <li className="title">{t("student.studentam.liTitle6")}</li>
       <p className="descr">
-        Вид учебного занятия, на котором преподаватель излагает теоретический
-        материал
+      {t("student.studentam.liText6")}
       </p>
-      <li className="title">Семинар</li>
+      <li className="title">{t("student.studentam.liTitle7")}</li>
       <p className="descr">
-        Вид учебного занятия, на котором предусмотрена практическая работа
-        студентов, включая ответы студентов на полученные для самостоятельного
-        изучения вопросы.
+      {t("student.studentam.liText7")}
       </p>
-      <li className="title">Семестр</li>
+      <li className="title">{t("student.studentam.liTitle8")}</li>
       <p className="descr">
-        Учебный год разделен на 2 семестра по 18 недель каждый.
+      {t("student.studentam.liText8")}
       </p>
-      <li className="title">Сессия</li>
+      <li className="title">{t("student.studentam.liTitle9")}</li>
       <p className="descr">
-        Учебное мероприятие, в течение которого студенты сдают зачеты и экзамены
-        за истекший семестр
+      {t("student.studentam.liText9")}
       </p>
-      <li className="title">Учебная дисциплина</li>
+      <li className="title">{t("student.studentam.liTitle10")}</li>
       <p className="descr">
-        Учебный курс, по которому в соответствии с программой и учебным планом
-        ведется подготовка студентов в рамках профиля учебного заведения и
-        избранной ими специальности это совокупность знаний. Это то же самое,
-        что и термин «предмет» в школе. Однако, в вузе не принято употреблять
-        данный термин.
+      {t("student.studentam.liText10")}
       </p>
     </AccordionWrapper>
   );
 };
 const Accordion2 = () => {
+  const {t} = useTranslation()
   return (
     <AccordionWrapper className="text1">
-      <li className="title">Пропускная система</li>
+      <li className="title">{t("student.studentam.liTitle11")}</li>
       <p className="descr">
-        В целях поддержания порядка в Академии действует пропускная система.
-        Каждый входящий обязан предъявить документы. Вашим пропуском в Академию
-        является электронный пропуск студента.
+      {t("student.studentam.liText11")}
       </p>
-      <li className="title">Одежда</li>
+      <li className="title">{t("student.studentam.liTitle12")}</li>
       <p className="descr">
-        В Академии есть ряд обязательных требований к одежде. Войдя в здание
-        мужчины снимают головные уборы. Верхнюю одежду принято сдавать в
-        гардероб – недопустимо входить в верхней одежде в какие-либо помещения
-        Академии. Студентам рекомендуется приходить на занятия аккуратно
-        одетыми, причесанными, предпочтительным является деловой стиль. Дурным
-        тоном в Академии считается вход в здание в шортах, открытых майках,
-        мини-юбках, шлепанцах и т.п.
+      {t("student.studentam.liText12")}
       </p>
-      <li className="title">Здоровый образ жизни</li>
+      <li className="title">{t("student.studentam.liTitle13")}</li>
       <p className="descr">
-        Употребление и распространение на территории Академии наркотических
-        средств влечет за собой немедленное отчисление. Распивать спиртные
-        напитки, включая пиво, находиться в состоянии алкогольного опьянения
-        строго запрещено и также влечет за собой отчисление. Курение в корпусах
-        и на территории Академии строго запрещено на основании Федерального
-        закона от 23.02.2014 года № 15-ФЗ «Об охране здоровья граждан от
-        воздействия окружающего табачного дыма и последствий потребления
-        табака». За нарушение закона также следует отчисление.
+      {t("student.studentam.liText13")}
       </p>
     </AccordionWrapper>
   );

@@ -2,8 +2,10 @@ import React from "react";
 import { BeltWrapper } from "./style";
 import Container from "../../../Common/Container";
 import Logo2 from "../../../Common/Svgs/Logo2";
+import { useTranslation } from "react-i18next";
 
 const Belt = () => {
+  const {t} = useTranslation();
   return (
     <BeltWrapper>
       <Container>
@@ -12,7 +14,7 @@ const Belt = () => {
             <Logo2 />
           </div>
           <h4 className="title">
-          У НАС ЧИТАЮТ ЛЕКЦИИ ИЗВЕСТНЫЕ РОССИЙСКИЕ И ЗАРУБЕЖНЫЕ ПРЕДПРИНИМАТЕЛИ<img src="/images/span-img.png" alt="" /> И ГОСУДАРСТВЕННЫЕ ДЕЯТЕЛИ
+          {t("belt.text1")}<img src="/images/span-img.png" alt="" /> {t("belt.text2")}
           </h4>
         </div>
       </Container>

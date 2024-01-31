@@ -1,18 +1,20 @@
 import React from 'react';
 import BannerWrapper from './style';
 import Container from '../../../Common/Container';
+import { useTranslation } from 'react-i18next';
 
 const Banner = () => {
+    const { t } =useTranslation();
     return (
         <BannerWrapper>
             <Container>
                 <div className="wrapper">
                     <div className="left-title">
-                        <h3 className='title'>КОНТАКТЫ АКАДЕМИИ</h3>
-                        <p className="location">125319, Москва,Метро «Аэропорт», ул. Планетная, 36</p>
+                        <h3 className='title'>{t("contacts.title")}</h3>
+                        <p className="location">{t("contacts.subtitle")}</p>
                     </div>
                     <div className="right">
-                        <p className="descr">От станции метро «Аэропорт» — первый вагон из центра, перед турникетами повернуть направо и подняться вверх по лестнице. На улице еще раз повернуть направо — перед вами будет ТЦ «Галерея Аэропорт». Обойдите его и двигайтесь прямо по улице Черняховского. Через 500 метров вы окажетесь на перекрестке с улицей Планетная — здесь тоже поверните направо. Через 200 метров по левую руку вы увидите пятиэтажное здание — это Московская Академия предпринимательства.</p>
+                        <p className="descr">{t("contacts.descr")}</p>
                     </div>
                 </div>
             </Container>

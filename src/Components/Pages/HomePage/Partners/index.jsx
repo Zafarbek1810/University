@@ -1,6 +1,7 @@
 import React from "react";
 import useWindowWidth from "../../../../Hooks/useWindow";
 import { PartnersWrapper } from "./style";
+import { useTranslation } from "react-i18next";
 
 const data = [
   {
@@ -27,9 +28,10 @@ const data2x = [...data, ...data];
 
 const Partners = () => {
   const width = useWindowWidth();
+  const {t} = useTranslation();
   return (
     <PartnersWrapper animateWidth={width}>
-        <h4 className="title">НАШИ ПАРТНЕРЫ</h4>
+        <h4 className="title">{t("partners.title")}</h4>
       <div className="wrapper">
         <div className="slider">
           <div className="slide-track">
