@@ -4,7 +4,7 @@ const FilterSvg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      class="icon icon-tabler icon-tabler-adjustments-alt"
+      className="icon icon-tabler icon-tabler-adjustments-alt"
       width="44"
       height="44"
       viewBox="0 0 24 24"

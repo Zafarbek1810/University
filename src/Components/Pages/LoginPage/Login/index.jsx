@@ -1,41 +1,73 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import LoginWrapper from "./style";
 import { Button, Form, Input } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 import FormUserSvg from "../../../Common/Svgs/FormUserSvg";
-import students from "../students.json";
 import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
+import AuthProvider from "../../../../Data/AuthProvider";
+import { useContextSelector } from "use-context-selector";
+import UserContext from "../../../../Context/UserContext/Context";
+import { toast } from "react-toastify";
 
 const Login = () => {
-  const [success, setSuccess] = useState(false);
-  const [name, setName] = useState();
   const { t } = useTranslation();
-  function loginMosTushishi(array, targetLogin, targetPass) {
-    for (const student of array) {
-      if (student.login === targetLogin && student.password === targetPass) {
-        return true;
+  const router = useRouter();
+  const [loading, setLoading] = useState(false)
+
+  const { isAuth, user: currentUser } = useContextSelector(
+    UserContext,
+    (ctx) => ctx.state
+  );
+
+  const loginContext = useContextSelector(
+    UserContext,
+    (ctx) => ctx.actions.login
+  );
+
+  console.log(isAuth,currentUser);
+  
+
+
+  useEffect(() => {
+    if (isAuth && currentUser) {
+      switch (currentUser.roles) {
+        case "ROLE_STUDENT": {
+          router.replace("/dashboard/cabinet");
+          break;
+        }
+        case "ROLE_ADMIN": {
+          router.replace("/admin/university");
+          break;
+        }
       }
     }
-    return false;
-  }
+  }, [isAuth, currentUser, loading]);
 
   const onFinish = (values) => {
-    // console.log("Success:", values);
-    if (loginMosTushishi(students, values.login, values.password)) {
-      console.log("succes");
-      setSuccess(true);
-      setName(students.filter((v) => v.login == values.login)[0].name);
-    }
+    const body = { username: values.login, password: values.password };
+    setLoading(true);
+    AuthProvider.login(body)
+      .then((data) => {
+        console.log(data.data.data);
+        localStorage.setItem("token", data.data.data.token);
+        loginContext(data.data.data);
+      })
+      .catch((err) => {
+        toast.warning("Login yoki parol noto'g'ri");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
+
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
 
-  console.log(students);
 
   return (
     <LoginWrapper>
-      {!success ? (
         <div className="box">
           <div className="box__title">{t("student.login.title")}</div>
           <div className="box__form">
@@ -97,7 +129,6 @@ const Login = () => {
                   />
                 </div>
               </Form.Item>
-              {/* <span>Минимум 8 символов</span> */}
 
               <Button
                 type="primary"
@@ -109,12 +140,6 @@ const Login = () => {
             </Form>
           </div>
         </div>
-      ) : (
-        <h3 style={{ width: "60%", textAlign: "center" }}>
-          Xurmatli {name}, bizda hozirda texnik ishlar olib borilmoqda, tez
-          orada bu kamchiliklar to`g`irlanadi&#128522;
-        </h3>
-      )}
     </LoginWrapper>
   );
 };

@@ -1,10 +1,9 @@
 import React from "react";
 
-const CloseIcon = () => {
+const UserCircle = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="icon icon-tabler icon-tabler-x"
+      className="icon icon-tabler icon-tabler-user-circle"
       width="24"
       height="24"
       viewBox="0 0 24 24"
@@ -15,10 +14,11 @@ const CloseIcon = () => {
       strokeLinejoin="round"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M18 6l-12 12" />
-      <path d="M6 6l12 12" />
+      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+      <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+      <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
     </svg>
   );
 };
 
-export default CloseIcon;
+export default UserCircle;

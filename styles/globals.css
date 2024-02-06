@@ -73,6 +73,19 @@ input:-internal-autofill-selected{
   background-color: #fff !important;
 }
 
+.ReactModal__Overlay--after-open{
+  background-color: rgba(0, 0, 0, 0.38) !important;
+}
+
+.ant-dropdown-menu button{
+  color: #000;
+}
+
+input{
+  background-color: #fff;
+  color: #000;
+}
+
 .tabs-drawer{
   display: flex;
   flex-direction: column;
