@@ -51,6 +51,7 @@ const FormWrapper = styled.div`
       background: #fff;
       border: 1px solid #d0d5dd;
       border-radius: 10px;
+      font-size: 16px;
       color: #000;
       width: 100%;
     }

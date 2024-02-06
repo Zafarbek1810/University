@@ -81,10 +81,7 @@ input:-internal-autofill-selected{
   color: #000;
 }
 
-input{
-  background-color: #fff;
-  color: #000;
-}
+
 
 .tabs-drawer{
   display: flex;
