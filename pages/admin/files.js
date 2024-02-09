@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import DashboardLayout from '../../src/Components/Layout'
-import Students from '../../src/Components/Pages/Admin/Students'
+import FilesMain from '../../src/Components/Pages/Admin/Files'
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <DashboardLayout>
-      <Students/>
+      <FilesMain/>
       </DashboardLayout>
     </div>
   )

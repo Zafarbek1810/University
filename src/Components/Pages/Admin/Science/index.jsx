@@ -6,6 +6,7 @@ import EditSvg from "../../../Common/Svgs/EditSvg";
 import MinLoader from "../../../Common/MinLoader";
 import AddSpecial from "./AddScience";
 import UpdateSpecial from "./UpdateSceince";
+import ScienceProvider from "../../../../Data/ScienceProvider";
 
 const Science = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
@@ -22,7 +23,7 @@ const Science = () => {
 
   useEffect(() => {
     setLoading(true);
-    SpecialtiesProvider.getAllSpecial()
+    ScienceProvider.getAllScience()
       .then((res) => {
         setSpecial(res.data);
       })
@@ -47,14 +48,14 @@ const Science = () => {
   return (
     <SpecialtiesWrapper>
       <div className="top">
-        <h3 className="col-2">Mutaxasisliklar</h3>
+        <h3 className="col-2">Fanlar</h3>
 
         <Button
           class="col-2 btn btn-success btn-rounded"
           variant="contained"
           onClick={() => openModal()}
         >
-          Mutaxasislik qo`shish
+          Fan qo`shish
         </Button>
       </div>
 
@@ -62,13 +63,10 @@ const Science = () => {
         <thead>
           <tr>
             <th style={{ minWidth: "35%" }} className="col">
-              Mutaxasislik nomi
+              Fan nomi
             </th>
             <th style={{ minWidth: "35%" }} className="col">
-              Fakultet
-            </th>
-            <th style={{ minWidth: "15%" }} className="col">
-              Narxi
+              Fayllar soni
             </th>
             <th style={{ minWidth: "15%" }} className="col">
               Amallar
@@ -83,10 +81,7 @@ const Science = () => {
                   {index + 1}. {obj.name}
                 </td>
                 <td style={{ minWidth: "35%" }} className="col">
-                  {obj.faculty?.name}
-                </td>
-                <td style={{ minWidth: "15%" }} className="col">
-                  {obj.faculty?.price.toLocaleString().replace(/,/g, " ")}
+                  {obj.fileStorage.length}
                 </td>
                 <td style={{ minWidth: "15%" }} className="col">
                   <div className="btns">

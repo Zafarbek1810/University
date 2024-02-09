@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import FacultiesProvider from "../../../../../Data/FacultiesProvider";
 import Select from "react-select";
 import SpecialtiesProvider from "../../../../../Data/SpecialtiesProvider";
+import ScienceProvider from "../../../../../Data/ScienceProvider";
 
 const UpdateScience = ({ onCloseModal2, editSpecial }) => {
   const { register, handleSubmit, control, reset, setValue } = useForm();
@@ -23,7 +24,7 @@ const UpdateScience = ({ onCloseModal2, editSpecial }) => {
   }, [editSpecial]);
 
   useEffect(() => {
-    FacultiesProvider.getAllFaculty()
+    SpecialtiesProvider.getAllSpecial()
       .then((res) => {
         setFaculty(res.data);
       })
@@ -36,17 +37,15 @@ const UpdateScience = ({ onCloseModal2, editSpecial }) => {
   const onSubmitSpecial = async (values) => {
     const body = {
       name: values.name,
-      faculty: {
-        id: specialId,
-      },
     };
     body.id = editSpecial.id;
+    body.isDeleted = false;
 
     setLoading(true);
-    SpecialtiesProvider.updateSpecial(body)
+    ScienceProvider.createScience(specialId ,body)
       .then((res) => {
         reset();
-        toast.success("Qo'shildi");
+        toast.success("O'zgartirildi!");
         onCloseModal2();
       })
       .catch((err) => {

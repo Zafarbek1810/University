@@ -1,34 +1,32 @@
-import { styled } from "styled-components";
+import styled from "styled-components";
 
-const AddSpecialWrapper = styled.div`
-    padding: 20px;
-
-`
-
-const ModalHeader = styled.header`
-  background: #fff;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #f5f6f8;
-  padding: 20px 20px 5px 20px;
-
-  h2.title {
-    margin-bottom: 0;
-    font-size: 25px !important;
+const StyledFiles = styled.div`
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+  .wrap {
+    display: flex;
+    height: 100%;
+    .left {
+      padding: 10px;
+      border-right: 1px solid #e5e5e5;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      button {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
 
-  svg {
-    height: 20px;
-    width: 20px;
-    color: #000;
+    .right {
+      padding: 10px;
+      width: 70%;
+    }
   }
-
-  button.closeSvg {
-    background: transparent;
-    border: none;
-  }
-`
-
+`;
 
 const ModalContent = styled.div`
   border-bottom: 1px solid #f5f6f8;
@@ -39,12 +37,8 @@ const ModalContent = styled.div`
     font-family: "Inter";
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: space-between;
-    .div{
-      width: 48%;
-    }
-
+   
     .label {
       width: 100%;
       display: block;
@@ -117,8 +111,4 @@ const ModalContent = styled.div`
 
 `
 
-export {
-  AddSpecialWrapper,
-    ModalHeader,
-    ModalContent
-}
+export { StyledFiles, ModalContent };

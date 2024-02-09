@@ -1,65 +1,59 @@
 import React, { useEffect, useState } from "react";
-import { AddSpecialWrapper, ModalContent, ModalHeader } from "./style";
+import {
+  AddSpecialWrapper,
+  ModalHeader,
+} from "../../Students/AddStudent/style";
 import CloseIconSvg from "../../../../Common/Svgs/CloseIconSvg";
-import ButtonLoader from "../../../../Common/ButtonLoader";
 import { Controller, useForm } from "react-hook-form";
-import { toast } from "react-toastify";
-import FacultiesProvider from "../../../../../Data/FacultiesProvider";
 import Select from "react-select";
-import UniversityProvider from "../../../../../Data/UniversityProvider";
-import SpecialtiesProvider from "../../../../../Data/SpecialtiesProvider";
+import StudentProvider from "../../../../../Data/StudentProvider";
+import ButtonLoader from "../../../../Common/ButtonLoader";
 import ScienceProvider from "../../../../../Data/ScienceProvider";
+import { toast } from "react-toastify";
+import { ModalContent } from "../style";
 
-const AddSpecial = ({ onCloseModal }) => {
+const AddFile = ({ onCloseModal }) => {
   const { register, handleSubmit, control, reset, setValue } = useForm();
   const [loading, setLoading] = useState(false);
-  const [faculty, setFaculty] = useState([]);
-  const [specialId, setSpecialId] = useState(null);
+  const [science, setScience] = useState([]);
+  const [scienceId, setScienceId] = useState(null);
 
   useEffect(() => {
-    SpecialtiesProvider.getAllSpecial()
+    ScienceProvider.getAllScience()
       .then((res) => {
-        setFaculty(res.data);
+        setScience(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
 
-
-  const onSubmitSpecial = async (values) => {
-    const body = {
-      name: values.name,
-    };
-
-    setLoading(true);
-    ScienceProvider.createScience(specialId, body)
-      .then((res) => {
-        reset();
-        toast.success(res.data?.message);
-        onCloseModal();
-      })
-      .catch((err) => {
-        console.log(err);
-        toast.error(err?.response?.data?.message);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+  const onSubmit = async (values) => {
+    try {
+      setLoading(true);
+      await ScienceProvider.uploadFile(
+        scienceId,
+        values.customName,
+        values.image[0]
+      );
+      await onCloseModal();
+      toast.success("Muvaffaqiyati biriktirildi!");
+    } catch (error) {
+      toast.error("Xatolik!");
+    }
   };
 
-  const optionSpecial = faculty.map((item) => {
+  const optionSpecial = science.map((item) => {
     return {
       value: item.id,
       label: item.name,
     };
   });
 
-  
   return (
     <AddSpecialWrapper>
       <ModalHeader className="modal-header">
-        <h2 className="title">Fan qo`shish</h2>
+        <h2 className="title">Fanga fayl biriktirish</h2>
         <button className="closeSvg" onClick={onCloseModal}>
           <CloseIconSvg />
         </button>
@@ -68,23 +62,23 @@ const AddSpecial = ({ onCloseModal }) => {
         <form
           className="p-3"
           style={{ width: 600 }}
-          onSubmit={handleSubmit(onSubmitSpecial)}
+          onSubmit={handleSubmit(onSubmit)}
         >
           <div className="label">
-            <label>Fakultetlar</label>
+            <label>Fanlar</label>
             <Controller
               control={control}
               name="region"
               render={({ field: { onChange, onBlur, value, name, ref } }) => (
                 <Select
-                  className="select col-3 w-100"
+                  className="select  w-100 mb-4"
                   value={value}
-                  placeholder="Fakultetni tanlang"
+                  placeholder="Fanni tanlang"
                   options={optionSpecial}
                   onBlur={onBlur}
                   onChange={(v) => {
                     onChange(v);
-                    setSpecialId(v.value);
+                    setScienceId(v.value);
                   }}
                   ref={ref}
                 />
@@ -92,12 +86,20 @@ const AddSpecial = ({ onCloseModal }) => {
             />
           </div>
           <div className="label">
-            <label>Nomi</label>
+            <label>Fayl nomi</label>
             <input
               autoComplete="off"
               className="form-control"
-              placeholder={"Mutaxasislik nomi"}
-              {...register("name", { required: true })}
+              placeholder={"Fayl nomi"}
+              {...register("customName", { required: true })}
+            />
+          </div>
+          <div className="label">
+            <label>Rasm</label>
+            <input
+              type="file"
+              className="form-control"
+              {...register("image", { required: true })}
             />
           </div>
           <button
@@ -113,4 +115,4 @@ const AddSpecial = ({ onCloseModal }) => {
   );
 };
 
-export default AddSpecial;
+export default AddFile;

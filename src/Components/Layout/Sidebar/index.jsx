@@ -49,6 +49,12 @@ const NavListMenu = [
     role: ["ROLE_ADMIN"],
   },
   {
+    title: "Fayllar",
+    path: "/admin/files",
+    src: "/icons/faculty.png",
+    role: ["ROLE_ADMIN"],
+  },
+  {
     title: "Talabalar",
     path: "/admin/students",
     src: "/icons/students.png",

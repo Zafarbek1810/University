@@ -54,6 +54,7 @@ const StyledWrapper = styled.div`
         p{
           font-size: 20px;
           font-weight: 500;
+          margin-bottom: 0;
         }
       }
     }
